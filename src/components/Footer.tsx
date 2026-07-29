@@ -27,7 +27,7 @@ const InstagramIcon = () => (
 export default function Footer() {
   return (
     <footer className="bg-black text-white px-5 sm:px-8 md:px-12 py-16 md:py-24 font-semibold uppercase tracking-widest text-xs sm:text-sm">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
         
         {/* Brand Column */}
         <div className="flex flex-col gap-6">
@@ -76,6 +76,22 @@ export default function Footer() {
           <Link href="/terms" className="hover:text-[#273E57] transition-colors">Terms of Service</Link>
           <Link href="/privacy" className="hover:text-[#273E57] transition-colors">Privacy Policy</Link>
           <Link href="/cookies" className="hover:text-[#273E57] transition-colors">Cookie Policy</Link>
+        </div>
+
+        {/* QR Codes Column */}
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
+            <span className="opacity-50 text-xs">Donate & Support</span>
+            <div className="bg-white p-2 rounded-lg w-fit">
+              <Image src="/razorpay-qr.png" alt="Razorpay QR" width={80} height={80} className="rounded-md" />
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="opacity-50 text-xs">Apply on Unstop</span>
+            <div className="bg-white p-2 rounded-lg w-fit">
+              <Image src="/unstop-qr.png" alt="Unstop QR" width={80} height={80} className="rounded-md" />
+            </div>
+          </div>
         </div>
       </div>
 
