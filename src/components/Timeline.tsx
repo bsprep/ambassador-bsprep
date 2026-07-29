@@ -5,19 +5,19 @@ import { Calendar, Users, Rocket } from "lucide-react";
 
 const TIMELINE_STEPS = [
   {
-    icon: <Calendar className="w-6 h-6 text-[#5E0ED7]" />,
+    icon: <Calendar className="w-6 h-6 text-[#273E57]" />,
     date: "July 15",
     title: "Applications Open",
     description: "Submit your application on Unstop. Limited slots available.",
   },
   {
-    icon: <Users className="w-6 h-6 text-[#5E0ED7]" />,
+    icon: <Users className="w-6 h-6 text-[#273E57]" />,
     date: "August",
     title: "Shortlisting Phase",
     description: "Candidates are selected based strictly on eagerness, drive, and merit.",
   },
   {
-    icon: <Rocket className="w-6 h-6 text-[#5E0ED7]" />,
+    icon: <Rocket className="w-6 h-6 text-[#273E57]" />,
     date: "Sept 10 - Oct 30",
     title: "The Ambassador Program",
     description: "Launch of the official BSPrep Ambassador Program.",
@@ -36,12 +36,12 @@ export default function Timeline() {
           className="mb-16 text-center"
         >
           <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-tight mb-4">
-            <span className="text-black">YOUR</span> <span className="text-[#5E0ED7]">TIMELINE</span>
+            <span className="text-black">YOUR</span> <span className="text-[#273E57]">TIMELINE</span>
           </h2>
           <p className="text-xs sm:text-sm opacity-50">Your journey to becoming a Student Ambassador</p>
         </motion.div>
 
-        <div className="relative border-l-2 border-[#5E0ED7]/20 ml-4 sm:ml-8 space-y-12 pb-4">
+        <div className="relative border-l-2 border-[#273E57]/20 ml-4 sm:ml-8 space-y-12 pb-4">
           {TIMELINE_STEPS.map((step, i) => (
             <motion.div
               key={step.title}
@@ -51,17 +51,17 @@ export default function Timeline() {
               transition={{ delay: i * 0.2 }}
               className="relative pl-8 sm:pl-12"
             >
-              <div className="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-white border-2 border-[#5E0ED7] flex items-center justify-center">
-                <div className="w-2 h-2 bg-[#5E0ED7] rounded-full" />
+              <div className="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-white border-2 border-[#273E57] flex items-center justify-center">
+                <div className="w-2 h-2 bg-[#273E57] rounded-full" />
               </div>
               
-              <div className="bg-black/5 p-6 border border-black/5 hover:border-[#5E0ED7]/30 transition-colors group">
+              <div className="bg-black/5 p-6 border border-black/5 hover:border-[#273E57]/30 transition-colors group">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="p-3 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform">
                     {step.icon}
                   </div>
                   <div>
-                    <div className="text-[#5E0ED7] text-xs font-bold mb-1">{step.date}</div>
+                    <div className="text-[#273E57] text-xs font-bold mb-1">{step.date}</div>
                     <h3 className="text-lg sm:text-xl">{step.title}</h3>
                   </div>
                 </div>

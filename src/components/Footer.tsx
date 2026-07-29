@@ -39,13 +39,13 @@ export default function Footer() {
           </div>
           
           <div className="flex gap-4 mt-2">
-            <a href="https://www.linkedin.com/company/bs-prep/" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#5E0ED7] hover:text-white transition-all">
+            <a href="https://www.linkedin.com/company/bs-prep/" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
               <LinkedinIcon />
             </a>
-            <a href="https://www.youtube.com/@DataScienceIITMTamil" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#5E0ED7] hover:text-white transition-all">
+            <a href="https://www.youtube.com/@DataScienceIITMTamil" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
               <YoutubeIcon />
             </a>
-            <a href="https://www.instagram.com/bsprep.in" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#5E0ED7] hover:text-white transition-all">
+            <a href="https://www.instagram.com/bsprep.in" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
               <InstagramIcon />
             </a>
           </div>
@@ -54,28 +54,28 @@ export default function Footer() {
         {/* Portals Column */}
         <div className="flex flex-col gap-4 opacity-70">
           <span className="opacity-50 mb-2">Websites</span>
-          <a href="https://bsprep.in" target="_blank" rel="noreferrer" className="hover:text-[#5E0ED7] transition-colors">Main Website</a>
-          <a href="https://blog.bsprep.in" target="_blank" rel="noreferrer" className="hover:text-[#5E0ED7] transition-colors">Blogs Portal</a>
-          <a href="https://pages.razorpay.com/support-bsprep" target="_blank" rel="noreferrer" className="hover:text-[#5E0ED7] transition-colors mt-2 text-[#5E0ED7] font-bold">Donate / Support</a>
+          <a href="https://bsprep.in" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Main Website</a>
+          <a href="https://blog.bsprep.in" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Blogs Portal</a>
+          <a href="https://pages.razorpay.com/support-bsprep" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors mt-2 text-[#273E57] font-bold">Donate / Support</a>
         </div>
 
         {/* Forms & Contact Column */}
         <div className="flex flex-col gap-4 opacity-70">
           <span className="opacity-50 mb-2">Contact & Forms</span>
-          <a href="mailto:support@bsprep.in" className="hover:text-[#5E0ED7] transition-colors lowercase font-medium">support@bsprep.in</a>
-          <a href="mailto:careers@bsprep.in" className="hover:text-[#5E0ED7] transition-colors lowercase font-medium">careers@bsprep.in</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8lSGsbLay_yvhHWjL2rtCd0YJCgjXmxNZ3ttB4IcFB0Js8g/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#5E0ED7] transition-colors mt-2">Contact Form</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqAmEuz6NrH6P-sa7jD9-0272a-cwm9eASrbvHor7nJN_TtQ/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#5E0ED7] transition-colors">Feedback Form</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyhCw9tPgKmMWYPhjV6Kzixp2RdYEi-x7JPL6JUxoLwbnB_g/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#5E0ED7] transition-colors">Join Community</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvet6P3yTtm4Ui3VE7M0gDSAsltxZ-Rrtd4fgUY0_iL7lkNg/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#5E0ED7] transition-colors">Hiring Form</a>
+          <a href="mailto:support@bsprep.in" className="hover:text-[#273E57] transition-colors lowercase font-medium">support@bsprep.in</a>
+          <a href="mailto:careers@bsprep.in" className="hover:text-[#273E57] transition-colors lowercase font-medium">careers@bsprep.in</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8lSGsbLay_yvhHWjL2rtCd0YJCgjXmxNZ3ttB4IcFB0Js8g/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors mt-2">Contact Form</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqAmEuz6NrH6P-sa7jD9-0272a-cwm9eASrbvHor7nJN_TtQ/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Feedback Form</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyhCw9tPgKmMWYPhjV6Kzixp2RdYEi-x7JPL6JUxoLwbnB_g/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Join Community</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvet6P3yTtm4Ui3VE7M0gDSAsltxZ-Rrtd4fgUY0_iL7lkNg/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Hiring Form</a>
         </div>
 
         {/* Legal Column */}
         <div className="flex flex-col gap-4 opacity-70">
           <span className="opacity-50 mb-2">Legal</span>
-          <Link href="/terms" className="hover:text-[#5E0ED7] transition-colors">Terms of Service</Link>
-          <Link href="/privacy" className="hover:text-[#5E0ED7] transition-colors">Privacy Policy</Link>
-          <Link href="/cookies" className="hover:text-[#5E0ED7] transition-colors">Cookie Policy</Link>
+          <Link href="/terms" className="hover:text-[#273E57] transition-colors">Terms of Service</Link>
+          <Link href="/privacy" className="hover:text-[#273E57] transition-colors">Privacy Policy</Link>
+          <Link href="/cookies" className="hover:text-[#273E57] transition-colors">Cookie Policy</Link>
         </div>
       </div>
 

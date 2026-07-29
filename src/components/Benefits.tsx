@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const BENEFITS = [
   {
-    icon: <Fingerprint className="w-8 h-8 text-[#5E0ED7]" />,
+    icon: <Fingerprint className="w-8 h-8 text-[#273E57]" />,
     title: "Digital Identity",
     items: [
       "Free .xyz Domains (1 Year) for top performers",
@@ -16,7 +16,7 @@ const BENEFITS = [
     ],
   },
   {
-    icon: <Cpu className="w-8 h-8 text-[#5E0ED7]" />,
+    icon: <Cpu className="w-8 h-8 text-[#273E57]" />,
     title: "AI Career Arsenal",
     items: [
       "AI Career Coach Access",
@@ -25,7 +25,7 @@ const BENEFITS = [
     ],
   },
   {
-    icon: <Briefcase className="w-8 h-8 text-[#5E0ED7]" />,
+    icon: <Briefcase className="w-8 h-8 text-[#273E57]" />,
     title: "Platform Perks",
     items: [
       "Access to the Job & Internship Portal",
@@ -62,7 +62,7 @@ export default function Benefits() {
           className="mb-16 md:mb-24 text-center"
         >
           <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-tight mb-4">
-            <span className="text-black">ELITE</span> <span className="text-[#5E0ED7]">PERKS</span>
+            <span className="text-black">ELITE</span> <span className="text-[#273E57]">PERKS</span>
           </h2>
           <p className="text-xs sm:text-sm opacity-50">Unlock premium rewards as you climb the leaderboard</p>
         </motion.div>
@@ -80,14 +80,14 @@ export default function Benefits() {
               variants={itemVariants} 
               className="bg-white p-6 sm:p-8 flex flex-col h-full shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(94,14,215,0.1)] transition-all duration-300 hover:-translate-y-2 border border-black/5 group"
             >
-              <div className="w-16 h-16 bg-[#5E0ED7]/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-[#5E0ED7]/20 transition-all duration-300">
+              <div className="w-16 h-16 bg-[#273E57]/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-[#273E57]/20 transition-all duration-300">
                 {benefit.icon}
               </div>
               <h3 className="text-lg sm:text-xl mb-6 text-black/90">{benefit.title}</h3>
               <ul className="flex flex-col gap-4 flex-1 mb-6">
                 {benefit.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-xs sm:text-sm normal-case font-medium opacity-70 leading-relaxed group-hover:opacity-100 transition-opacity">
-                    <span className="text-[#5E0ED7] mt-1 shrink-0 text-[10px]">✦</span>
+                    <span className="text-[#273E57] mt-1 shrink-0 text-[10px]">✦</span>
                     {item}
                   </li>
                 ))}
@@ -106,14 +106,14 @@ export default function Benefits() {
         >
           <div className="flex-1 w-full">
             <h3 className="text-2xl sm:text-3xl mb-6 text-black/90 tracking-tight">
-              <span className="text-black">PHYSICAL</span> <span className="text-[#5E0ED7]">SWAGS</span>
+              <span className="text-black">PHYSICAL</span> <span className="text-[#273E57]">SWAGS</span>
             </h3>
             <p className="text-xs sm:text-sm opacity-50 mb-8 normal-case font-medium">Unlock exclusive BSPrep merchandise based on referral milestones.</p>
             <ul className="flex flex-col gap-4">
-              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#5E0ED7] shrink-0 text-[10px]">✦</span> Exclusive BSPrep T-Shirts</li>
-              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#5E0ED7] shrink-0 text-[10px]">✦</span> Premium Diaries & Pens</li>
-              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#5E0ED7] shrink-0 text-[10px]">✦</span> Official Sticker Sheets</li>
-              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#5E0ED7] shrink-0 text-[10px]">✦</span> Bookmarks & Collectibles</li>
+              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#273E57] shrink-0 text-[10px]">✦</span> Exclusive BSPrep T-Shirts</li>
+              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#273E57] shrink-0 text-[10px]">✦</span> Premium Diaries & Pens</li>
+              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#273E57] shrink-0 text-[10px]">✦</span> Official Sticker Sheets</li>
+              <li className="flex items-center gap-3 text-sm normal-case font-medium opacity-70"><span className="text-[#273E57] shrink-0 text-[10px]">✦</span> Bookmarks & Collectibles</li>
             </ul>
           </div>
           <div className="relative w-full lg:w-1/2 aspect-square max-w-[500px] overflow-hidden bg-slate-50 flex items-center justify-center p-4">

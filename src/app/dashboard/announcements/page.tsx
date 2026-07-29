@@ -22,7 +22,7 @@ export default async function AnnouncementsPage() {
         <h1 className="text-xl sm:text-2xl mb-2 text-black dark:text-white tracking-tight flex items-center gap-3">
           Announcements
           {announcements && announcements.length > 0 && (
-            <span className="bg-[#5E0ED7] text-white text-[10px] px-2 py-1 rounded-full">
+            <span className="bg-[#273E57] text-white text-[10px] px-2 py-1 rounded-full">
               {announcements.length} NEW
             </span>
           )}
@@ -43,11 +43,11 @@ export default async function AnnouncementsPage() {
       ) : (
         <div className="flex flex-col gap-6">
           {announcements.map((announcement) => (
-            <div key={announcement.id} className="border border-slate-200 dark:border-white/10 bg-white dark:bg-[#1A1A1A] rounded-3xl p-6 sm:p-8 shadow-sm transition-colors relative overflow-hidden group hover:border-[#5E0ED7]/50">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#5E0ED7]/20 via-[#5E0ED7] to-[#5E0ED7]/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div key={announcement.id} className="border border-slate-200 dark:border-white/10 bg-white dark:bg-[#1A1A1A] rounded-3xl p-6 sm:p-8 shadow-sm transition-colors relative overflow-hidden group hover:border-[#273E57]/50">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#273E57]/20 via-[#273E57] to-[#273E57]/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-                <h2 className="text-lg sm:text-xl text-[#5E0ED7] tracking-tight">{announcement.title}</h2>
+                <h2 className="text-lg sm:text-xl text-[#273E57] tracking-tight">{announcement.title}</h2>
                 <div className="flex items-center gap-2 text-[10px] opacity-50 bg-slate-50 dark:bg-white/5 px-3 py-1.5 rounded-lg border border-slate-100 dark:border-white/5 shrink-0">
                   <Calendar size={12} />
                   {new Date(announcement.created_at).toLocaleDateString('en-US', {

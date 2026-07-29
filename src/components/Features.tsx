@@ -5,17 +5,17 @@ import { Link2, CheckSquare, Award } from "lucide-react";
 
 const FEATURES = [
   {
-    icon: <Link2 className="w-8 h-8 sm:w-12 sm:h-12 text-[#5E0ED7]" />,
+    icon: <Link2 className="w-8 h-8 sm:w-12 sm:h-12 text-[#273E57]" />,
     title: "Referral Engine",
     description: "Get your unique invite link. Invite your peers and track every signup seamlessly on your dashboard.",
   },
   {
-    icon: <CheckSquare className="w-8 h-8 sm:w-12 sm:h-12 text-[#5E0ED7]" />,
+    icon: <CheckSquare className="w-8 h-8 sm:w-12 sm:h-12 text-[#273E57]" />,
     title: "Bounty Tasks",
     description: "Earn points by completing verified tasks: from technical blogging to hosting exclusive campus sessions.",
   },
   {
-    icon: <Award className="w-8 h-8 sm:w-12 sm:h-12 text-[#5E0ED7]" />,
+    icon: <Award className="w-8 h-8 sm:w-12 sm:h-12 text-[#273E57]" />,
     title: "Premium Rewards",
     description: "Redeem your points for zero-cost career perks like 1-on-1 resume roasts and mock interviews.",
   },
@@ -61,7 +61,7 @@ export default function Features() {
           className="max-w-2xl mb-16 md:mb-24"
         >
           <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-tight mb-6">
-            <span className="text-black">CORE</span> <span className="text-[#5E0ED7]">RESPONSIBILITIES</span>
+            <span className="text-black">CORE</span> <span className="text-[#273E57]">RESPONSIBILITIES</span>
           </h2>
           <div className="max-w-3xl mb-16">
             <p className="text-sm sm:text-base font-medium opacity-70 normal-case leading-relaxed">
@@ -88,7 +88,7 @@ export default function Features() {
         >
           {FEATURES.map((feature, i) => (
             <motion.div key={i} variants={itemVariants} className="flex flex-col gap-6 group">
-              <div className="p-4 bg-black/5 w-fit group-hover:bg-[#5E0ED7]/10 transition-colors">
+              <div className="p-4 bg-black/5 w-fit group-hover:bg-[#273E57]/10 transition-colors">
                 {feature.icon}
               </div>
               <div>

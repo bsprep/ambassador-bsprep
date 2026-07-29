@@ -42,7 +42,7 @@ export default async function BountiesPage() {
           <p className="text-[10px] sm:text-xs normal-case font-medium opacity-60">Complete tasks to earn massive bonus points.</p>
         </div>
         <div className="text-[10px] hidden sm:block opacity-60">
-          <span className="text-[#5E0ED7] font-bold">{totalCompleted}/{bounties?.length || 0}</span> Approved
+          <span className="text-[#273E57] font-bold">{totalCompleted}/{bounties?.length || 0}</span> Approved
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export default async function BountiesPage() {
 
       <div className="mt-6 border border-slate-200 dark:border-white/10 bg-white dark:bg-[#1A1A1A] rounded-3xl p-5 shadow-sm transition-colors">
         <p className="text-[10px] normal-case font-medium opacity-60 flex items-start gap-2 leading-relaxed">
-          <svg className="w-4 h-4 shrink-0 text-[#5E0ED7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-4 h-4 shrink-0 text-[#273E57]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           Bonus points appear on the leaderboard after manual verification. Each task is checked by our team. Fraudulent proofs will result in disqualification and account ban.

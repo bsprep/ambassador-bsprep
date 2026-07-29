@@ -40,7 +40,7 @@ export default function Faq() {
           className="mb-16 text-center"
         >
           <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-tight mb-4">
-            <span className="text-black">COMMON</span> <span className="text-[#5E0ED7]">QUESTIONS</span>
+            <span className="text-black">COMMON</span> <span className="text-[#273E57]">QUESTIONS</span>
           </h2>
           <p className="text-xs sm:text-sm opacity-50">Everything you need to know</p>
         </motion.div>
@@ -62,7 +62,7 @@ export default function Faq() {
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-black/5 transition-colors"
                 >
                   <span className="text-sm sm:text-base leading-snug pr-4">{faq.question}</span>
-                  <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors ${isOpen ? 'bg-[#5E0ED7] text-white' : 'bg-black/5 text-black'}`}>
+                  <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors ${isOpen ? 'bg-[#273E57] text-white' : 'bg-black/5 text-black'}`}>
                     {isOpen ? <Minus size={16} /> : <Plus size={16} />}
                   </div>
                 </button>

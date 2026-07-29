@@ -28,7 +28,7 @@ export default async function AdminLayout({
   }
 
   return (
-    <div className="flex min-h-screen bg-slate-50 dark:bg-black text-black dark:text-white selection:bg-[#5E0ED7] selection:text-white font-sans">
+    <div className="flex min-h-screen bg-slate-50 dark:bg-black text-black dark:text-white selection:bg-[#273E57] selection:text-white font-sans">
       <AdminSidebar />
       <div className="flex-1 flex flex-col min-w-0 pb-20 md:pb-0 overflow-y-auto">
         {children}

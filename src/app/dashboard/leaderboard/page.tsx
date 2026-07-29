@@ -26,7 +26,7 @@ export default async function LeaderboardPage() {
         </div>
         <div className="text-[10px] opacity-60 bg-slate-100 dark:bg-white/5 px-4 py-2 rounded-xl flex flex-col items-center">
           <span className="opacity-70 mb-1">Total Ambassadors</span>
-          <span className="text-[#5E0ED7] font-bold text-lg">{ambassadors?.length || 0}</span>
+          <span className="text-[#273E57] font-bold text-lg">{ambassadors?.length || 0}</span>
         </div>
       </div>
 

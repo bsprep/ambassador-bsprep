@@ -77,7 +77,7 @@ export default function AdminAnnouncementsPage() {
         <div className="lg:col-span-1">
           <div className="bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm">
             <h2 className="text-lg mb-6 flex items-center gap-2">
-              <Plus size={18} className="text-[#5E0ED7]" />
+              <Plus size={18} className="text-[#273E57]" />
               New Post
             </h2>
             
@@ -89,7 +89,7 @@ export default function AdminAnnouncementsPage() {
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder="e.g. Townhall Meeting Tomorrow"
-                  className="w-full bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-sm normal-case outline-none focus:border-[#5E0ED7] transition-colors"
+                  className="w-full bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-sm normal-case outline-none focus:border-[#273E57] transition-colors"
                   required
                 />
               </div>
@@ -100,7 +100,7 @@ export default function AdminAnnouncementsPage() {
                   value={content}
                   onChange={(e) => setContent(e.target.value)}
                   placeholder="Type your message here..."
-                  className="w-full h-32 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-sm normal-case outline-none focus:border-[#5E0ED7] transition-colors resize-none"
+                  className="w-full h-32 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-sm normal-case outline-none focus:border-[#273E57] transition-colors resize-none"
                   required
                 />
               </div>
@@ -108,7 +108,7 @@ export default function AdminAnnouncementsPage() {
               <button 
                 type="submit"
                 disabled={actionLoading}
-                className="mt-2 w-full bg-[#5E0ED7] text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-[#4a0ba8] transition-colors disabled:opacity-50"
+                className="mt-2 w-full bg-[#273E57] text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-[#1A2D42] transition-colors disabled:opacity-50"
               >
                 {actionLoading ? <Loader2 className="animate-spin" size={16} /> : <Send size={16} />}
                 Publish Announcement
@@ -120,12 +120,12 @@ export default function AdminAnnouncementsPage() {
         {/* Existing Announcements */}
         <div className="lg:col-span-2">
           {loading ? (
-            <div className="py-20 flex justify-center text-[#5E0ED7]">
+            <div className="py-20 flex justify-center text-[#273E57]">
               <Loader2 className="animate-spin" size={32} />
             </div>
           ) : announcements.length === 0 ? (
             <div className="bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-10 flex flex-col items-center justify-center text-center">
-              <div className="text-[#5E0ED7] opacity-50 mb-4">
+              <div className="text-[#273E57] opacity-50 mb-4">
                 <Send size={48} />
               </div>
               <h3 className="text-lg">No Announcements</h3>
@@ -136,10 +136,10 @@ export default function AdminAnnouncementsPage() {
           ) : (
             <div className="flex flex-col gap-4">
               {announcements.map((announcement) => (
-                <div key={announcement.id} className="bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-start transition-colors hover:border-[#5E0ED7]/30">
+                <div key={announcement.id} className="bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm flex flex-col sm:flex-row gap-6 items-start transition-colors hover:border-[#273E57]/30">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-base tracking-tight text-[#5E0ED7]">{announcement.title}</h3>
+                      <h3 className="text-base tracking-tight text-[#273E57]">{announcement.title}</h3>
                       {!announcement.active && (
                         <span className="text-[9px] bg-red-500/10 text-red-500 px-2 py-1 rounded-md">Draft</span>
                       )}

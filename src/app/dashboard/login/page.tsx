@@ -41,8 +41,8 @@ export default function LoginPage() {
       <div className="flex-1 flex items-center justify-center p-5 relative z-10">
         <div className="w-full max-w-md bg-[#121212]/60 backdrop-blur-xl p-8 sm:p-10 text-center shadow-2xl border border-white/10 rounded-[2rem] relative overflow-hidden group">
           
-          <div className="w-16 h-16 bg-[#5E0ED7]/20 border border-[#5E0ED7]/30 flex items-center justify-center mx-auto mb-6 rounded-2xl shadow-[0_0_30px_rgba(94,14,215,0.3)]">
-            <svg className="w-8 h-8 text-[#5E0ED7]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="w-16 h-16 bg-[#273E57]/20 border border-[#273E57]/30 flex items-center justify-center mx-auto mb-6 rounded-2xl shadow-[0_0_30px_rgba(94,14,215,0.3)]">
+            <svg className="w-8 h-8 text-[#273E57]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
           </div>

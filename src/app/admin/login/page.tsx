@@ -21,13 +21,13 @@ export default function AdminLoginPage() {
     <main className="min-h-screen bg-black text-white flex flex-col uppercase tracking-widest font-semibold relative overflow-hidden">
       {/* Decorative background image */}
       <Image src="/background.gif" alt="Background" fill className="object-cover opacity-30 absolute inset-0 z-0 grayscale" priority unoptimized />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#5E0ED7]/20 to-black opacity-90 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#273E57]/20 to-black opacity-90 z-0" />
 
       {/* Header */}
       <header className="p-5 sm:p-8 flex justify-between items-center relative z-10">
         <div className="flex items-center gap-4">
           <div className="relative w-10 h-10 shrink-0 bg-white/10 rounded-xl p-1 backdrop-blur-md border border-white/20 shadow-lg flex items-center justify-center">
-            <ShieldAlert size={20} className="text-[#5E0ED7]" />
+            <ShieldAlert size={20} className="text-[#273E57]" />
           </div>
           <span className="text-sm font-bold drop-shadow-md text-white">Admin Portal</span>
         </div>
@@ -39,9 +39,9 @@ export default function AdminLoginPage() {
 
       {/* Login Box */}
       <div className="flex-1 flex items-center justify-center p-5 relative z-10">
-        <div className="w-full max-w-md bg-[#121212]/80 backdrop-blur-xl p-8 sm:p-10 text-center shadow-[0_0_50px_rgba(94,14,215,0.2)] border border-[#5E0ED7]/30 rounded-[2rem] relative overflow-hidden group">
+        <div className="w-full max-w-md bg-[#121212]/80 backdrop-blur-xl p-8 sm:p-10 text-center shadow-[0_0_50px_rgba(94,14,215,0.2)] border border-[#273E57]/30 rounded-[2rem] relative overflow-hidden group">
           
-          <div className="w-16 h-16 bg-[#5E0ED7] flex items-center justify-center mx-auto mb-6 rounded-2xl shadow-[0_0_30px_rgba(94,14,215,0.6)]">
+          <div className="w-16 h-16 bg-[#273E57] flex items-center justify-center mx-auto mb-6 rounded-2xl shadow-[0_0_30px_rgba(94,14,215,0.6)]">
             <ShieldAlert size={32} className="text-white" />
           </div>
 

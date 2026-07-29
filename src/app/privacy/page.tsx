@@ -5,13 +5,13 @@ export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-black pt-32 pb-20 px-5 sm:px-8 md:px-12 font-semibold">
       <div className="max-w-4xl mx-auto bg-white p-8 sm:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-black/5">
-        <Link href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-black/60 hover:text-[#5E0ED7] transition-colors mb-12">
+        <Link href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-black/60 hover:text-[#273E57] transition-colors mb-12">
           <ArrowLeft size={16} />
           Back to Home
         </Link>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight mb-8">
-          <span className="text-black">Privacy</span> <span className="text-[#5E0ED7]">Policy</span>
+          <span className="text-black">Privacy</span> <span className="text-[#273E57]">Policy</span>
         </h1>
 
         <div className="space-y-8 normal-case font-medium opacity-80 leading-relaxed text-sm sm:text-base">
@@ -45,7 +45,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl uppercase tracking-widest font-semibold text-black mb-4">4. Your Rights</h2>
             <p>
-              You have the right to request the deletion of your account and associated data at any time. If you wish to leave the program or have your data removed from our databases, please contact us at <a href="mailto:support@bsprep.in" className="text-[#5E0ED7] hover:underline">support@bsprep.in</a>.
+              You have the right to request the deletion of your account and associated data at any time. If you wish to leave the program or have your data removed from our databases, please contact us at <a href="mailto:support@bsprep.in" className="text-[#273E57] hover:underline">support@bsprep.in</a>.
             </p>
           </section>
 

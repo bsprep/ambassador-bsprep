@@ -75,7 +75,7 @@ export default function AdminBountiesPage() {
       </div>
 
       {loading ? (
-        <div className="py-20 flex justify-center text-[#5E0ED7]">
+        <div className="py-20 flex justify-center text-[#273E57]">
           <Loader2 className="animate-spin" size={32} />
         </div>
       ) : (
@@ -90,7 +90,7 @@ export default function AdminBountiesPage() {
                 <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
                   <div>
                     <h2 className="text-lg text-white">{bounty.title}</h2>
-                    <span className="text-[10px] text-[#5E0ED7] font-bold">REWARD: {bounty.reward_points} PTS</span>
+                    <span className="text-[10px] text-[#273E57] font-bold">REWARD: {bounty.reward_points} PTS</span>
                   </div>
                   <div className="bg-white/5 px-4 py-2 rounded-xl text-xs">
                     {bountySubmissions.length} Submissions

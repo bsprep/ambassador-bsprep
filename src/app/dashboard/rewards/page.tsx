@@ -70,15 +70,15 @@ export default async function RewardsPage() {
         {ITEMS.map((item) => (
           <div 
             key={item.id} 
-            className="bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm flex flex-col hover:border-[#5E0ED7]/50 transition-colors"
+            className="bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm flex flex-col hover:border-[#273E57]/50 transition-colors"
           >
             {item.image ? (
               <div className="relative w-full h-48 bg-slate-50 dark:bg-white/5 rounded-2xl mb-6 overflow-hidden flex items-center justify-center p-4">
                 <Image src={item.image} alt={item.name} fill className="object-contain p-4 hover:scale-105 transition-transform" />
               </div>
             ) : (
-              <div className="relative w-full h-48 bg-gradient-to-br from-[#5E0ED7]/10 to-[#5E0ED7]/5 rounded-2xl mb-6 flex items-center justify-center border border-[#5E0ED7]/20">
-                <span className="text-[#5E0ED7] text-4xl">📜</span>
+              <div className="relative w-full h-48 bg-gradient-to-br from-[#273E57]/10 to-[#273E57]/5 rounded-2xl mb-6 flex items-center justify-center border border-[#273E57]/20">
+                <span className="text-[#273E57] text-4xl">📜</span>
               </div>
             )}
             

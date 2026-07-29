@@ -56,7 +56,7 @@ export function OnboardingModal() {
           />
         </div>
         
-        <p className="text-sm font-semibold text-[#5E0ED7] mb-4">
+        <p className="text-sm font-semibold text-[#273E57] mb-4">
           You've earned the Verified Ambassador Badge!
         </p>
         
@@ -71,7 +71,7 @@ export function OnboardingModal() {
 
         <button
           onClick={startTour}
-          className="w-full flex items-center justify-center bg-[#5E0ED7] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#4a0ba8] transition-colors"
+          className="w-full flex items-center justify-center bg-[#273E57] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1A2D42] transition-colors"
         >
           Start Dashboard Tour
         </button>

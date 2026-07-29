@@ -55,7 +55,7 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-[14px] tracking-widest hover:text-[#5E0ED7] transition-colors"
+              className="text-[14px] tracking-widest hover:text-[#273E57] transition-colors"
             >
               {link.label}
             </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setIsMobileMenuOpen(true)}
-          className="w-9 h-9 rounded-full bg-black flex flex-col items-center justify-center gap-1 shrink-0 group hover:bg-[#5E0ED7] transition-colors"
+          className="w-9 h-9 rounded-full bg-black flex flex-col items-center justify-center gap-1 shrink-0 group hover:bg-[#273E57] transition-colors"
         >
           <span className="w-4 h-[2px] bg-white group-hover:scale-x-90 transition-transform origin-center" />
           <span className="w-4 h-[2px] bg-white group-hover:scale-x-110 transition-transform origin-center" />
@@ -93,7 +93,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#5E0ED7] transition-colors"
+                className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white hover:bg-[#273E57] transition-colors"
               >
                 <X size={18} strokeWidth={2.5} />
               </button>
@@ -106,7 +106,7 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-3xl text-black hover:text-[#5E0ED7] transition-colors"
+                  className="text-3xl text-black hover:text-[#273E57] transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -116,10 +116,10 @@ export default function Navbar() {
             {/* Bottom CTA */}
             <div className="mt-auto flex flex-col gap-2">
               <Link
-                href="https://unstop.com"
+                href="https://unstop.com/p/student-ambassador-program-bsprep-1720364?lb=usePftiW&utm_medium=Share&utm_source=competitions&utm_campaign=Sozyuihw88836"
                 target="_blank"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 text-lg text-white bg-[#5E0ED7] py-4 rounded-full hover:bg-[#4a0ba8] transition-colors"
+                className="flex items-center justify-center gap-2 text-lg text-white bg-[#273E57] py-4 rounded-full hover:bg-[#1A2D42] transition-colors"
               >
                 Apply Now
                 <ArrowUpRight className="w-[18px] h-[18px]" />

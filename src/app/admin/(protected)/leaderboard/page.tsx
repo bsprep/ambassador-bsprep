@@ -21,7 +21,7 @@ export default async function AdminLeaderboardPage() {
       <div className="bg-[#121212] rounded-3xl p-6 border border-white/10 shadow-xl overflow-x-auto">
         <table className="w-full text-left border-collapse min-w-[800px]">
           <thead>
-            <tr className="border-b border-white/10 text-[10px] uppercase tracking-widest text-[#5E0ED7]">
+            <tr className="border-b border-white/10 text-[10px] uppercase tracking-widest text-[#273E57]">
               <th className="pb-4 px-4 font-bold w-16">S.No</th>
               <th className="pb-4 px-4 font-bold">Name</th>
               <th className="pb-4 px-4 font-bold">Email</th>
@@ -39,7 +39,7 @@ export default async function AdminLeaderboardPage() {
                 <td className="py-4 px-4">{ambassador.name || "Unknown"}</td>
                 <td className="py-4 px-4 normal-case tracking-normal">{ambassador.email}</td>
                 <td className="py-4 px-4 tracking-widest">{ambassador.referral_code}</td>
-                <td className="py-4 px-4 text-right text-[#5E0ED7] font-bold">
+                <td className="py-4 px-4 text-right text-[#273E57] font-bold">
                   {ambassador.points} pts
                 </td>
               </tr>

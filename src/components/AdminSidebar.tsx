@@ -23,7 +23,7 @@ export default function AdminSidebar() {
         </div>
         <div className="flex flex-col">
           <span className="text-white">BSPrep</span>
-          <span className="text-[9px] text-[#5E0ED7] font-bold flex items-center gap-1 mt-0.5">
+          <span className="text-[9px] text-[#273E57] font-bold flex items-center gap-1 mt-0.5">
             <ShieldAlert size={10} /> ADMIN PANEL
           </span>
         </div>
@@ -38,7 +38,7 @@ export default function AdminSidebar() {
               href={item.href}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
                 isActive 
-                  ? "bg-[#5E0ED7] text-white shadow-md shadow-[#5E0ED7]/20" 
+                  ? "bg-[#273E57] text-white shadow-md shadow-[#273E57]/20" 
                   : "text-white/50 hover:bg-white/5 hover:text-white"
               }`}
             >

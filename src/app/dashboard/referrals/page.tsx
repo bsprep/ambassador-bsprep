@@ -26,14 +26,14 @@ export default async function ReferralsPage() {
           <p className="text-[10px] sm:text-xs normal-case font-medium opacity-60">Students who signed up using your code.</p>
         </div>
         <div className="text-[10px] opacity-60 bg-slate-100 dark:bg-white/5 px-3 py-1.5 rounded-full">
-          <span className="text-[#5E0ED7] font-bold">{referrals?.length || 0}</span> Total
+          <span className="text-[#273E57] font-bold">{referrals?.length || 0}</span> Total
         </div>
       </div>
 
       <div className="flex-1 bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm flex flex-col transition-colors">
         {(!referrals || referrals.length === 0) ? (
           <div className="flex-1 flex flex-col items-center justify-center text-center opacity-50 py-12">
-            <Users size={32} className="mb-4 text-[#5E0ED7] opacity-50" />
+            <Users size={32} className="mb-4 text-[#273E57] opacity-50" />
             <p className="text-xs normal-case">No referrals yet. Share your link to get started!</p>
           </div>
         ) : (
@@ -48,7 +48,7 @@ export default async function ReferralsPage() {
               return (
                 <div key={idx} className="grid grid-cols-2 items-center text-xs bg-slate-50 dark:bg-white/5 px-4 py-3 rounded-xl border border-slate-100 dark:border-white/5 transition-colors">
                   <span className="font-bold flex items-center gap-3">
-                    <span className="text-[#5E0ED7] w-4 text-left">{displayNumber}.</span>
+                    <span className="text-[#273E57] w-4 text-left">{displayNumber}.</span>
                     <span className="normal-case font-medium">{ref.referred_user_email || "h***@hidden.com"}</span>
                   </span>
                   <span className="text-right opacity-60 normal-case">

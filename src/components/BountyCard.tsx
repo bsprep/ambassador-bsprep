@@ -59,9 +59,9 @@ export default function BountyCard({
 
   return (
     <>
-      <div className={`bg-white dark:bg-[#1A1A1A] border ${isApproved ? 'border-green-500/50' : 'border-slate-200 dark:border-white/10'} rounded-3xl p-6 shadow-sm flex flex-col relative overflow-hidden group hover:border-[#5E0ED7]/30 transition-colors`}>
+      <div className={`bg-white dark:bg-[#1A1A1A] border ${isApproved ? 'border-green-500/50' : 'border-slate-200 dark:border-white/10'} rounded-3xl p-6 shadow-sm flex flex-col relative overflow-hidden group hover:border-[#273E57]/30 transition-colors`}>
         <div className="flex justify-between items-start mb-4">
-          <div className="w-10 h-10 bg-slate-100 dark:bg-white/5 rounded-xl flex items-center justify-center text-[#5E0ED7]">
+          <div className="w-10 h-10 bg-slate-100 dark:bg-white/5 rounded-xl flex items-center justify-center text-[#273E57]">
             <Upload size={18} />
           </div>
           
@@ -88,8 +88,8 @@ export default function BountyCard({
           {bounty.description}
         </p>
 
-        <div className={`bg-[#5E0ED7]/5 text-[#5E0ED7] border border-[#5E0ED7]/20 rounded-xl py-2 px-4 text-[10px] flex items-center gap-2 ${isApproved ? 'bg-green-500/10 text-green-500 border-green-500/20' : ''}`}>
-          <div className="w-3.5 h-3.5 bg-[#5E0ED7] rounded-full text-white flex items-center justify-center font-bold text-[8px]">
+        <div className={`bg-[#273E57]/5 text-[#273E57] border border-[#273E57]/20 rounded-xl py-2 px-4 text-[10px] flex items-center gap-2 ${isApproved ? 'bg-green-500/10 text-green-500 border-green-500/20' : ''}`}>
+          <div className="w-3.5 h-3.5 bg-[#273E57] rounded-full text-white flex items-center justify-center font-bold text-[8px]">
             P
           </div>
           +{bounty.reward_points} Bonus Points
@@ -114,7 +114,7 @@ export default function BountyCard({
               </div>
 
               {isSubmittedLocal ? (
-                <div className="py-8 text-center text-[#5E0ED7] flex flex-col items-center">
+                <div className="py-8 text-center text-[#273E57] flex flex-col items-center">
                   <svg className="w-12 h-12 mb-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -134,13 +134,13 @@ export default function BountyCard({
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="https://..."
-                    className="w-full bg-slate-50 dark:bg-[#121212] border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-xs normal-case outline-none focus:border-[#5E0ED7] transition-colors mb-4"
+                    className="w-full bg-slate-50 dark:bg-[#121212] border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-xs normal-case outline-none focus:border-[#273E57] transition-colors mb-4"
                   />
 
                   <button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 bg-[#5E0ED7] hover:bg-black dark:hover:bg-white dark:hover:text-black text-white px-4 py-3 rounded-xl text-xs transition-colors font-bold tracking-widest uppercase disabled:opacity-50"
+                    className="w-full flex items-center justify-center gap-2 bg-[#273E57] hover:bg-black dark:hover:bg-white dark:hover:text-black text-white px-4 py-3 rounded-xl text-xs transition-colors font-bold tracking-widest uppercase disabled:opacity-50"
                   >
                     {isSubmitting && <Loader2 size={16} className="animate-spin" />}
                     Submit for Verification

@@ -40,7 +40,7 @@ export default function LeaderboardTable({ ambassadors }: { ambassadors: any[] }
             setSearchQuery(e.target.value);
             setCurrentPage(1); // Reset page on search
           }}
-          className="w-full bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-2xl pl-11 pr-4 py-3 text-xs normal-case outline-none focus:border-[#5E0ED7] transition-colors shadow-sm"
+          className="w-full bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-2xl pl-11 pr-4 py-3 text-xs normal-case outline-none focus:border-[#273E57] transition-colors shadow-sm"
         />
       </div>
 
@@ -66,7 +66,7 @@ export default function LeaderboardTable({ ambassadors }: { ambassadors: any[] }
                 <div 
                   key={ambassador.id} 
                   className={`grid grid-cols-12 items-center text-xs px-6 py-4 border-b border-slate-50 dark:border-white/5 transition-colors hover:bg-slate-50 dark:hover:bg-white/5 ${
-                    isTop3 ? 'bg-[#5E0ED7]/5 dark:bg-[#5E0ED7]/10' : ''
+                    isTop3 ? 'bg-[#273E57]/5 dark:bg-[#273E57]/10' : ''
                   }`}
                 >
                   <div className="col-span-2 sm:col-span-1 flex items-center">
@@ -76,20 +76,20 @@ export default function LeaderboardTable({ ambassadors }: { ambassadors: any[] }
                   <div className="col-span-7 sm:col-span-8 flex items-center gap-3">
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-bold ${
                       isTop3 
-                        ? 'bg-[#5E0ED7] text-white' 
-                        : 'bg-slate-100 dark:bg-white/10 text-[#5E0ED7]'
+                        ? 'bg-[#273E57] text-white' 
+                        : 'bg-slate-100 dark:bg-white/10 text-[#273E57]'
                     }`}>
                       {(ambassador.name || "A").charAt(0).toUpperCase()}
                     </div>
                     <div className="flex flex-col">
-                      <span className={`font-bold ${isTop3 ? 'text-[#5E0ED7]' : ''}`}>
+                      <span className={`font-bold ${isTop3 ? 'text-[#273E57]' : ''}`}>
                         {ambassador.name || "Anonymous Ambassador"}
                       </span>
                       <span className="text-[10px] opacity-50 normal-case">{ambassador.referral_code}</span>
                     </div>
                   </div>
                   
-                  <div className="col-span-3 text-right font-bold text-[#5E0ED7]">
+                  <div className="col-span-3 text-right font-bold text-[#273E57]">
                     {ambassador.points} pts
                   </div>
                 </div>

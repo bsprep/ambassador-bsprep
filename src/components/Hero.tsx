@@ -54,7 +54,7 @@ const slideUp = {
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen flex flex-col font-semibold uppercase text-black selection:bg-[#5E0ED7] selection:text-white overflow-hidden">
+    <div className="relative min-h-screen flex flex-col font-semibold uppercase text-black selection:bg-[#273E57] selection:text-white overflow-hidden">
       
       {/* Spacer to replace the static nav height so stats aren't pushed up */}
       <div className="h-[80px] w-full shrink-0" />
@@ -88,7 +88,7 @@ export default function Hero() {
                 className="flex items-start"
                 style={{ fontSize: "clamp(1.2rem, 4.5vw, 3rem)", lineHeight: 1 }}
               >
-                <span className="text-[#5E0ED7] text-[0.5em] mt-[0.2em]">+</span>
+                <span className="text-[#273E57] text-[0.5em] mt-[0.2em]">+</span>
                 <span>{stat.value}</span>
               </div>
               <div className="text-[9px] sm:text-[10px] md:text-xs tracking-widest whitespace-pre-line leading-tight text-right mt-1">
@@ -115,12 +115,12 @@ export default function Hero() {
 
           <div className="flex flex-col items-end gap-1.5 sm:gap-2">
             <motion.a
-              href="https://unstop.com" target="_blank" rel="noreferrer"
+              href="https://unstop.com/p/student-ambassador-program-bsprep-1720364?lb=usePftiW&utm_medium=Share&utm_source=competitions&utm_campaign=Sozyuihw88836" target="_blank" rel="noreferrer"
               custom={6}
               initial="hidden"
               animate="visible"
               variants={fadeUp}
-              className="flex items-center gap-2 text-xs sm:text-sm md:text-base text-white bg-[#5E0ED7] px-4 py-2 sm:px-6 sm:py-3 rounded-full whitespace-nowrap group hover:bg-[#4a0ba8] transition-colors"
+              className="flex items-center gap-2 text-xs sm:text-sm md:text-base text-white bg-[#273E57] px-4 py-2 sm:px-6 sm:py-3 rounded-full whitespace-nowrap group hover:bg-[#1A2D42] transition-colors"
             >
               Apply Now
               <ArrowUpRight className="w-[14px] h-[14px] sm:w-[18px] sm:h-[18px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

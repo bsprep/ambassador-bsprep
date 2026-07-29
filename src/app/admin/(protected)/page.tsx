@@ -67,7 +67,7 @@ export default async function AdminDashboardPage() {
       {/* Top Ambassadors */}
       <div className="bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm">
         <h2 className="text-sm mb-6 flex items-center gap-2">
-          <Target size={16} className="text-[#5E0ED7]" /> Top Ambassadors
+          <Target size={16} className="text-[#273E57]" /> Top Ambassadors
         </h2>
         
         <div className="overflow-x-auto">
@@ -84,7 +84,7 @@ export default async function AdminDashboardPage() {
             <tbody>
               {topAmbassadors?.map((ambassador, i) => (
                 <tr key={i} className="border-b border-slate-50 dark:border-white/5 last:border-0 hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
-                  <td className="py-4 text-[#5E0ED7]">#{i + 1}</td>
+                  <td className="py-4 text-[#273E57]">#{i + 1}</td>
                   <td className="py-4 font-bold">{ambassador.name || "Unknown"}</td>
                   <td className="py-4 normal-case opacity-70">{ambassador.email}</td>
                   <td className="py-4">{ambassador.points}</td>

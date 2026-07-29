@@ -33,13 +33,13 @@ export default function SponsorsPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-black pt-32 pb-20 px-5 sm:px-8 md:px-12 font-semibold uppercase">
       <div className="max-w-4xl mx-auto">
-        <Link href="/" className="inline-flex items-center gap-2 text-xs tracking-widest text-black/60 hover:text-[#5E0ED7] transition-colors mb-12">
+        <Link href="/" className="inline-flex items-center gap-2 text-xs tracking-widest text-black/60 hover:text-[#273E57] transition-colors mb-12">
           <ArrowLeft size={16} />
           Back to Home
         </Link>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl tracking-tight mb-4">
-          <span className="text-black">OUR</span> <span className="text-[#5E0ED7]">SPONSORS</span>
+          <span className="text-black">OUR</span> <span className="text-[#273E57]">SPONSORS</span>
         </h1>
         <p className="text-xs sm:text-sm opacity-50 tracking-widest mb-16 max-w-lg">
           The industry leaders and visionary platforms that make the BSPrep Growth Fellows program possible.
@@ -60,7 +60,7 @@ export default function SponsorsPage() {
                   href={sponsor.website} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className="inline-flex items-center gap-1.5 text-xs tracking-widest text-[#5E0ED7] hover:text-black transition-colors mt-2"
+                  className="inline-flex items-center gap-1.5 text-xs tracking-widest text-[#273E57] hover:text-black transition-colors mt-2"
                 >
                   Visit Website <ArrowUpRight size={14} />
                 </a>
@@ -69,7 +69,7 @@ export default function SponsorsPage() {
           ))}
         </div>
 
-        <div className="bg-[#5E0ED7] text-white p-10 sm:p-16 text-center flex flex-col items-center shadow-xl">
+        <div className="bg-[#273E57] text-white p-10 sm:p-16 text-center flex flex-col items-center shadow-xl">
           <h2 className="text-3xl sm:text-4xl tracking-tight mb-4">WANNA SPONSOR US?</h2>
           <p className="normal-case text-white/80 max-w-md mb-8 text-sm leading-relaxed">
             Partner with us to empower the next generation of tech leaders. Get your brand in front of thousands of highly motivated students across campuses.
