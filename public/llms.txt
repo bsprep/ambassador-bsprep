@@ -1,0 +1,14 @@
+# BSPrep Ambassador Program
+
+Welcome to the BSPrep Ambassador Program portal. This platform is used for managing ambassadors, tracking their progress, and providing resources for promoting BSPrep.
+
+## Important Links
+- [Home](https://ambassador.bsprep.in/)
+- [Terms and Conditions](https://ambassador.bsprep.in/terms)
+- [Privacy Policy](https://ambassador.bsprep.in/privacy)
+- [Cookie Policy](https://ambassador.bsprep.in/cookies)
+- [Overview Document](https://ambassador.bsprep.in/docs/bsprep_overview.pdf)
+
+## Application Structure
+- `/dashboard/*` - Ambassador dashboard (requires login)
+- `/admin/*` - Admin dashboard (requires login)

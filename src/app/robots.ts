@@ -4,7 +4,7 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
-      allow: '/',
+      allow: ['/', '/terms', '/privacy', '/cookies', '/llms.txt'],
       disallow: ['/dashboard/', '/admin/'],
     },
     sitemap: 'https://ambassador.bsprep.in/sitemap.xml',

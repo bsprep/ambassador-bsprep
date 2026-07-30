@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white px-5 sm:px-8 md:px-12 py-16 md:py-24 font-semibold uppercase tracking-widest text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
-        
+
         {/* Brand Column */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4">
@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
             <span className="text-lg">BSPrep</span>
           </div>
-          
+
           <div className="flex gap-4 mt-2">
             <a href="https://www.linkedin.com/company/bs-prep/" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
               <LinkedinIcon />
@@ -101,7 +101,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} BSPrep
           </span>
           <span className="opacity-40 normal-case font-medium text-[10px] max-w-lg">
-            Disclaimer: BSPrep is an independent, non-profit initiative and is NOT affiliated with, endorsed by, or sponsored by IIT Madras. 
+            Disclaimer: BSPrep is an independent, non-profit initiative and is NOT affiliated with, endorsed by, or sponsored by IIT Madras.
           </span>
         </div>
       </div>
