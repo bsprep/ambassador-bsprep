@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import LeaderboardTable from "@/components/LeaderboardTable";
@@ -35,7 +36,11 @@ export default async function LeaderboardPage() {
           Error loading leaderboard data.
         </div>
       ) : (
-        <LeaderboardTable ambassadors={ambassadors || []} />
+        <LeaderboardTable 
+          ambassadors={ambassadors || []} 
+          currentUserId={user.id} 
+          currentUserAvatarUrl={user?.user_metadata?.avatar_url} 
+        />
       )}
     </main>
   );

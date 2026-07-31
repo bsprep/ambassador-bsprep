@@ -3,7 +3,15 @@
 import { useState } from "react";
 import { Search, Trophy, Medal } from "lucide-react";
 
-export default function LeaderboardTable({ ambassadors }: { ambassadors: any[] }) {
+export default function LeaderboardTable({ 
+  ambassadors,
+  currentUserId,
+  currentUserAvatarUrl
+}: { 
+  ambassadors: any[];
+  currentUserId?: string;
+  currentUserAvatarUrl?: string;
+}) {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -73,19 +81,28 @@ export default function LeaderboardTable({ ambassadors }: { ambassadors: any[] }
                     {getRankIcon(actualRank)}
                   </div>
                   
-                  <div className="col-span-7 sm:col-span-8 flex items-center gap-3">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-bold ${
-                      isTop3 
-                        ? 'bg-[#273E57] text-white' 
-                        : 'bg-slate-100 dark:bg-white/10 text-[#273E57]'
-                    }`}>
-                      {(ambassador.name || "A").charAt(0).toUpperCase()}
-                    </div>
+                  <div className="col-span-7 sm:col-span-8 flex items-center gap-4">
+                    {ambassador.id === currentUserId && currentUserAvatarUrl ? (
+                      <div className={`relative w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-sm border-2 ${isTop3 ? 'border-[#273E57]' : 'border-slate-100 dark:border-white/10'}`}>
+                        <img src={currentUserAvatarUrl} alt="Profile" className="w-full h-full object-cover" />
+                      </div>
+                    ) : (
+                      <div className={`w-10 h-10 rounded-full shrink-0 flex items-center justify-center text-xs font-bold shadow-sm border-2 ${
+                        isTop3 
+                          ? 'bg-[#273E57] text-white border-[#273E57]' 
+                          : 'bg-slate-100 dark:bg-white/10 text-[#273E57] border-slate-100 dark:border-white/10'
+                      }`}>
+                        {(ambassador.name || "A").charAt(0).toUpperCase()}
+                      </div>
+                    )}
                     <div className="flex flex-col">
-                      <span className={`font-bold ${isTop3 ? 'text-[#273E57]' : ''}`}>
+                      <span className={`text-sm font-bold ${isTop3 ? 'text-[#273E57]' : ''}`}>
                         {ambassador.name || "Anonymous Ambassador"}
+                        {ambassador.id === currentUserId && (
+                          <span className="ml-2 text-[10px] bg-[#273E57]/10 dark:bg-white/10 px-2 py-0.5 rounded-md text-[#273E57] dark:text-white uppercase tracking-wider font-bold">You</span>
+                        )}
                       </span>
-                      <span className="text-[10px] opacity-50 normal-case">{ambassador.referral_code}</span>
+                      <span className="text-[10px] opacity-50 normal-case font-medium">{ambassador.referral_code}</span>
                     </div>
                   </div>
                   

@@ -132,7 +132,7 @@ export default function Hero() {
               variants={fadeUp}
               className="text-[8px] sm:text-[9px] md:text-[10px] tracking-widest opacity-50 uppercase mr-2"
             >
-              Applications Opening Soon
+              Applications Open Now
             </motion.div>
           </div>
         </div>

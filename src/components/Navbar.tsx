@@ -125,7 +125,7 @@ export default function Navbar() {
                 <ArrowUpRight className="w-[18px] h-[18px]" />
               </Link>
               <div className="text-center text-[10px] opacity-50 pb-2">
-                Applications Opening Soon
+                Applications Open Now
               </div>
             </div>
           </motion.div>

@@ -72,11 +72,23 @@ export default async function DashboardPage() {
           {/* Top accent */}
           <div className="absolute top-0 left-0 right-0 h-2 bg-[#273E57]" />
           
-          <h1 className="text-xl sm:text-2xl mb-2 text-black dark:text-white tracking-tight">
-            Welcome, <span className="text-[#273E57]">{user.user_metadata?.full_name || "Ambassador"}!</span>
-          </h1>
-          <p className="text-xs normal-case font-medium opacity-60">Your ambassador journey starts here.</p>
-          
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-6">
+            {user?.user_metadata?.avatar_url ? (
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-4 border-slate-50 dark:border-[#273E57]/20 shadow-md shrink-0">
+                <Image src={user.user_metadata.avatar_url} alt="Profile" fill className="object-cover" />
+              </div>
+            ) : (
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-200 dark:bg-white/10 flex items-center justify-center text-slate-500 border-4 border-slate-50 dark:border-[#273E57]/20 shadow-md shrink-0 text-2xl font-bold">
+                {(user.user_metadata?.full_name || user.email || 'A').charAt(0).toUpperCase()}
+              </div>
+            )}
+            <div>
+              <h1 className="text-xl sm:text-2xl mb-1 text-black dark:text-white tracking-tight">
+                Welcome, <span className="text-[#273E57]">{user.user_metadata?.full_name || "Ambassador"}!</span>
+              </h1>
+              <p className="text-xs normal-case font-medium opacity-60">Your ambassador journey starts here.</p>
+            </div>
+          </div>          
           {ambassadorData?.referral_code && (
             <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3" id="tour-referral-link">
               <div className="inline-flex items-center gap-4 bg-slate-50 dark:bg-white/5 px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 text-xs shadow-inner overflow-x-auto max-w-full">

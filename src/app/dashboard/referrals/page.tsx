@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { Users } from "lucide-react";
+import ReferralsChart from "@/components/ReferralsChart";
 
 export default async function ReferralsPage() {
   const supabase = await createClient();
@@ -29,6 +30,8 @@ export default async function ReferralsPage() {
           <span className="text-[#273E57] font-bold">{referrals?.length || 0}</span> Total
         </div>
       </div>
+
+      <ReferralsChart referrals={referrals || []} />
 
       <div className="flex-1 bg-white dark:bg-[#1A1A1A] border border-slate-200 dark:border-white/10 rounded-3xl p-6 shadow-sm flex flex-col transition-colors">
         {(!referrals || referrals.length === 0) ? (
