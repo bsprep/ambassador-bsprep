@@ -61,7 +61,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white/90" />
       </div>
 
-      <div className="flex-1 flex flex-col items-center justify-center text-center px-5 sm:px-8 md:px-12 pt-32 pb-20 w-full max-w-7xl mx-auto">
+      <div className="flex-1 flex flex-col items-center justify-center text-center px-5 sm:px-8 md:px-12 pt-16 sm:pt-20 pb-6 sm:pb-8 w-full max-w-7xl mx-auto">
         
         {/* Top Pill */}
         <motion.div
@@ -69,13 +69,13 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-[#273E57]/20 bg-white/70 backdrop-blur-md shadow-[0_8px_30px_rgba(39,62,87,0.08)] text-[10px] sm:text-xs tracking-widest whitespace-nowrap text-[#273E57] mb-8 sm:mb-12 font-bold"
+          className="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-[#273E57]/20 bg-white/70 backdrop-blur-md shadow-[0_8px_30px_rgba(39,62,87,0.08)] text-[10px] sm:text-xs tracking-widest whitespace-nowrap text-[#273E57] mb-5 sm:mb-6 font-bold"
         >
           {t("hero.textA")}
         </motion.div>
 
         {/* Main Heading */}
-        <div className="flex flex-col items-center gap-1 sm:gap-2 mb-12 sm:mb-16 w-full relative">
+        <div className="flex flex-col items-center gap-1 sm:gap-2 mb-6 sm:mb-8 w-full relative">
           {HEADING_WORDS.map((word, i) => (
             <div key={word} className="overflow-hidden w-full px-2">
               <motion.div
@@ -83,7 +83,7 @@ export default function Hero() {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="text-[11vw] sm:text-6xl md:text-7xl lg:text-[7rem] xl:text-[8.5rem] leading-[0.85] tracking-tight text-center text-slate-900"
+                className="text-[11vw] sm:text-6xl md:text-7xl lg:text-[6.5rem] xl:text-[7.5rem] leading-[0.85] tracking-tight text-center text-slate-900"
               >
                 {word}
               </motion.div>
@@ -92,7 +92,7 @@ export default function Hero() {
         </div>
 
         {/* Stats Row */}
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16 md:gap-24 mb-16 sm:mb-20 w-full">
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-12 md:gap-20 mb-8 sm:mb-10 w-full">
           {STATS.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -119,12 +119,12 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="flex flex-col items-center gap-8 w-full max-w-sm mx-auto"
+          className="flex flex-col items-center gap-6 w-full max-w-sm mx-auto"
         >
           <div className="flex flex-col items-center gap-3 w-full">
             <a
               href="https://unstop.com/p/student-ambassador-program-bsprep-1720364?lb=usePftiW&utm_medium=Share&utm_source=competitions&utm_campaign=Sozyuihw88836" target="_blank" rel="noreferrer"
-              className="flex items-center justify-center gap-2 text-sm sm:text-base text-white bg-[#273E57] w-full px-8 py-5 sm:py-6 rounded-full group hover:bg-[#1A2D42] transition-all duration-300 shadow-[0_10px_40px_rgba(39,62,87,0.3)] hover:shadow-[0_15px_50px_rgba(39,62,87,0.4)] hover:-translate-y-1"
+              className="flex items-center justify-center gap-2 text-sm sm:text-base text-white bg-[#273E57] w-full px-8 py-4 sm:py-5 rounded-full group hover:bg-[#1A2D42] transition-all duration-300 shadow-[0_10px_40px_rgba(39,62,87,0.3)] hover:shadow-[0_15px_50px_rgba(39,62,87,0.4)] hover:-translate-y-1"
             >
               <span className="tracking-widest font-bold">{t("hero.applyNow")}</span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
