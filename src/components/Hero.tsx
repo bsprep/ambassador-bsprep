@@ -57,7 +57,7 @@ export default function Hero() {
   const HEADING_WORDS = t("hero.headingWords") as string[];
 
   return (
-    <div className="relative min-h-screen flex flex-col font-semibold uppercase text-black selection:bg-[#273E57] selection:text-white overflow-hidden">
+    <div className="relative z-0 min-h-screen flex flex-col font-semibold uppercase text-black selection:bg-[#273E57] selection:text-white overflow-hidden">
       
       {/* Spacer to replace the static nav height so stats aren't pushed up */}
       <div className="h-[80px] w-full shrink-0" />
@@ -73,8 +73,6 @@ export default function Hero() {
           src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260517_222138_3e3205be-3364-417b-a64a-bfe087acbec4.mp4"
         />
       </div>
-
-
       {/* Stats Row */}
       <div className="flex-1 flex items-center justify-end px-5 sm:px-8 md:px-12 py-8 md:py-0 relative z-10">
         <div className="flex items-center gap-5 sm:gap-8 md:gap-10">

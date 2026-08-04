@@ -1,6 +1,6 @@
 export type Language = "en" | "hi" | "ta";
 
-export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> = {
+export const TRANSLATIONS: Record<Language, Record<string, any>> = {
   en: {
     // Hero
     "hero.stats.impacted": "STUDENTS\nIMPACTED",
@@ -12,8 +12,15 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
     "hero.textB": "The Official Portal For Student Ambassadors To Unlock Exclusive Rewards And Opportunities",
     "hero.headingWords": ["Growth", "Fellows", "Portal"],
 
+    // About
+    "about.pill": "ABOUT US",
+    "about.title1": "BY STUDENTS,",
+    "about.title2": "FOR STUDENTS.",
+    "about.desc": "We started BSPrep to solve a simple problem: the BS degree is hard, and doing it solo is even harder. We are entirely student-run, independent, and focused on one thing—giving you the notes, tools, and late-night study groups we wish we had when we started.",
+    "about.btn": "EXPLORE PLATFORM",
+
     // Marquee
-    "marquee.words": ["NON-PROFIT INITIATIVE", "BSPREP 2026", "OPEN SOURCE", "AMBASSADOR PROGRAM", "TECH LEADERS", "AI TOOLS"],
+    "marquee.words": ["STUDENT AMBASSADOR", "CAMPUS LEADER", "BSPREP 2026", "TECH COMMUNITY", "EXCLUSIVE REWARDS", "CAREER GROWTH"],
 
     // Sponsors
     "sponsors.title": "Our Sponsors",
@@ -22,7 +29,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
 
     // HowItWorks
     "process.label": "THE PROCESS",
-    "process.title": "How It Works",
+    "process.title": "HOW IT WORKS",
     "process.step1": "Apply on Unstop",
     "process.step2": "Get Selected",
     "process.step3": "Complete Bounties",
@@ -63,7 +70,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
 
     // Elite Perks
     "perks.label": "WHAT YOU'LL GET",
-    "perks.title": "Elite Ambassador Perks",
+    "perks.title": "ELITE AMBASSADOR PERKS",
     "perks.desc": "Since this is the inaugural BSPrep Student Ambassador Program, we've partnered with industry leaders to bring you unprecedented, zero-cost career advantages.",
     "perks.sponsored": "SPONSORED BY",
     "perks.item1.title": "AI Mock Interview Credits",
@@ -83,9 +90,46 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
     "perks.item5.pill": "Tech Lifestyle",
 
     // Benefits
-    "benefits.label": "Scoring & Rewards",
-    "benefits.title": "Leaderboard\n& Rewards",
+    "benefits.label": "SCORING & REWARDS",
+    "benefits.title": "LEADERBOARD\n& REWARDS",
     "benefits.desc": "Every referral counts. The leaderboard tracks your progress in real-time. Earn points, climb ranks, and get recognized at the end of the program with exclusive rewards reserved only for the top performers.",
+
+    // Testimonials
+    "testimonials.title1": "TRUSTED BY",
+    "testimonials.title2": "THE COMMUNITY",
+    "testimonials.subtitle": "Hear from students and mentors who have experienced the impact of BSPrep firsthand.",
+    "testimonials.list": [
+      {
+        name: "Aarav Sharma",
+        role: "IITM BS Data Science Student",
+        quote: "BSPrep completely changed how I approach my assignments. The peer mentorship and structured resources are a lifesaver when concepts get tough.",
+        avatar: "A"
+      },
+      {
+        name: "Priya Patel",
+        role: "BSPrep Mentor",
+        quote: "Being a mentor on this platform allows me to guide juniors through the exact challenges I faced. It's incredibly fulfilling to give back to this community.",
+        avatar: "P"
+      },
+      {
+        name: "Siddharth Verma",
+        role: "IITM BS Diploma Student",
+        quote: "The mock interviews and study materials provided by BSPrep gave me the exact edge I needed to ace my qualifier exams. Highly recommended!",
+        avatar: "S"
+      },
+      {
+        name: "Kavya Iyer",
+        role: "IITM BS Degree Student",
+        quote: "I used to feel isolated studying online, but BSPrep's community made me feel connected. The collaborative learning environment is unmatched.",
+        avatar: "K"
+      },
+      {
+        name: "Rohan Gupta",
+        role: "IITM BS Foundation Student",
+        quote: "The structured roadmaps helped me navigate my first semester with confidence. It's the best companion for the IITM BS journey.",
+        avatar: "R"
+      }
+    ],
 
     // FAQ
     "faq.title1": "COMMON",
@@ -102,8 +146,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
     "faq.a5": "Shortlisting is based strictly on your application. We look for enthusiasm, clear communication, and a genuine desire to grow your skills and community.",
 
     // CTA
-    "cta.title1": "Ready to make an ",
-    "cta.title2": "Impact?",
+    "cta.title1": "READY TO MAKE AN ",
+    "cta.title2": "IMPACT?",
     "cta.desc": "Join the BSPrep Student Ambassador Program and unlock exclusive rewards, networking opportunities, and career growth.",
     "cta.btn": "Apply Now",
     "cta.sub": "Via Unstop Platform",
@@ -119,8 +163,15 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
     "hero.textB": "विशेष पुरस्कार और अवसर अनलॉक करने के लिए छात्र एंबेसडर का आधिकारिक पोर्टल",
     "hero.headingWords": ["ग्रोथ", "फेलोज़", "पोर्टल"],
 
+    // About
+    "about.pill": "हमारे बारे में",
+    "about.title1": "छात्रों द्वारा,",
+    "about.title2": "छात्रों के लिए।",
+    "about.desc": "हमने एक साधारण समस्या को हल करने के लिए BSPrep शुरू किया: BS डिग्री कठिन है, और इसे अकेले करना और भी कठिन है। हम पूरी तरह से छात्र-संचालित, स्वतंत्र और एक ही चीज़ पर केंद्रित हैं—आपको वे नोट्स, टूल और देर रात के अध्ययन समूह देना जिनकी हमें शुरुआत करते समय कमी खली थी।",
+    "about.btn": "प्लेटफ़ॉर्म एक्सप्लोर करें",
+
     // Marquee
-    "marquee.words": ["गैर-लाभकारी पहल", "BSPREP 2026", "ओपन सोर्स", "एंबेसडर प्रोग्राम", "टेक लीडर्स", "AI टूल्स"],
+    "marquee.words": ["छात्र एंबेसडर", "कैंपस लीडर", "BSPREP 2026", "टेक समुदाय", "विशेष इनाम", "करियर ग्रोथ"],
 
     // Sponsors
     "sponsors.title": "हमारे प्रायोजक",
@@ -194,6 +245,43 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
     "benefits.title": "लीडरबोर्ड\nऔर इनाम",
     "benefits.desc": "हर रेफरल मायने रखता है। लीडरबोर्ड वास्तविक समय में आपकी प्रगति को ट्रैक करता है। अंक अर्जित करें, रैंक पर चढ़ें, और कार्यक्रम के अंत में विशेष पुरस्कारों के साथ पहचाने जाएं।",
 
+    // Testimonials
+    "testimonials.title1": "समुदाय का",
+    "testimonials.title2": "भरोसा",
+    "testimonials.subtitle": "उन छात्रों और मेंटर्स से सुनें जिन्होंने BSPrep के प्रभाव का प्रत्यक्ष अनुभव किया है।",
+    "testimonials.list": [
+      {
+        name: "Aarav Sharma",
+        role: "IITM BS Data Science Student",
+        quote: "BSPrep ने मेरे असाइनमेंट करने के तरीके को पूरी तरह से बदल दिया। जब विषय कठिन होते हैं तो साथियों का मार्गदर्शन और व्यवस्थित अध्ययन सामग्री जीवन रक्षक होते हैं।",
+        avatar: "A"
+      },
+      {
+        name: "Priya Patel",
+        role: "BSPrep Mentor",
+        quote: "इस प्लेटफॉर्म पर मेंटर बनने से मुझे जूनियर्स को उन चुनौतियों से पार पाने में मदद मिलती है जिनका मैंने सामना किया था। इस समुदाय को वापस देना अविश्वसनीय रूप से संतोषजनक है।",
+        avatar: "P"
+      },
+      {
+        name: "Siddharth Verma",
+        role: "IITM BS Diploma Student",
+        quote: "BSPrep द्वारा प्रदान किए गए मॉक इंटरव्यू और अध्ययन सामग्री ने मुझे अपनी क्वालिफायर परीक्षा में उत्कृष्ट प्रदर्शन करने के लिए आवश्यक बढ़त दी। अत्यधिक अनुशंसित!",
+        avatar: "S"
+      },
+      {
+        name: "Kavya Iyer",
+        role: "IITM BS Degree Student",
+        quote: "मैं ऑनलाइन पढ़ते समय अकेलापन महसूस करती थी, लेकिन BSPrep के समुदाय ने मुझे जुड़ा हुआ महसूस कराया। सहयोगात्मक सीखने का माहौल बेजोड़ है।",
+        avatar: "K"
+      },
+      {
+        name: "Rohan Gupta",
+        role: "IITM BS Foundation Student",
+        quote: "व्यवस्थित रोडमैप ने मुझे अपने पहले सेमेस्टर को आत्मविश्वास के साथ पार करने में मदद की। यह IITM BS यात्रा के लिए सबसे अच्छा साथी है।",
+        avatar: "R"
+      }
+    ],
+
     // FAQ
     "faq.title1": "सामान्य",
     "faq.title2": "प्रश्न",
@@ -226,8 +314,15 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
     "hero.textB": "பிரத்யேக வெகுமதிகள் மற்றும் வாய்ப்புகளைத் திறப்பதற்கான மாணவர் தூதர்களின் அதிகாரப்பூர்வ தளம்",
     "hero.headingWords": ["குரோத்", "ஃபெலோஸ்", "போர்ட்டல்"],
 
+    // About
+    "about.pill": "எங்களைப் பற்றி",
+    "about.title1": "மாணவர்களால்,",
+    "about.title2": "மாணவர்களுக்காக.",
+    "about.desc": "ஒரு எளிய சிக்கலைத் தீர்க்க நாங்கள் BSPrep ஐத் தொடங்கினோம்: BS பட்டம் கடினமானது, அதை தனியாக செய்வது இன்னும் கடினம். நாங்கள் முழுக்க முழுக்க மாணவர்களால் நடத்தப்படும், சுதந்திரமான மற்றும் ஒரு விஷயத்தில் கவனம் செலுத்துகிறோம் - நாங்கள் தொடங்கியபோது நாங்கள் விரும்பிய குறிப்புகள், கருவிகள் மற்றும் இரவு நேர ஆய்வுக் குழுக்களை உங்களுக்கு வழங்குவது.",
+    "about.btn": "தளத்தை ஆராயுங்கள்",
+
     // Marquee
-    "marquee.words": ["இலாப நோக்கற்ற முயற்சி", "BSPREP 2026", "ஓப்பன் சோர்ஸ்", "தூதர் திட்டம்", "தொழில்நுட்ப தலைவர்கள்", "AI கருவிகள்"],
+    "marquee.words": ["மாணவர் தூதர்", "வளாக தலைவர்", "BSPREP 2026", "தொழில்நுட்ப சமூகம்", "பிரத்யேக வெகுமதிகள்", "தொழில் வளர்ச்சி"],
 
     // Sponsors
     "sponsors.title": "எங்கள் ஸ்பான்சர்கள்",
@@ -300,6 +395,43 @@ export const TRANSLATIONS: Record<Language, Record<string, string | string[]>> =
     "benefits.label": "மதிப்பெண் மற்றும் வெகுமதிகள்",
     "benefits.title": "லீடர்போர்டு\nமற்றும் வெகுமதிகள்",
     "benefits.desc": "ஒவ்வொரு பரிந்துரையும் கணக்கிடப்படும். லீடர்போர்டு உங்கள் முன்னேற்றத்தை கண்காணிக்கிறது. புள்ளிகளைப் பெறுங்கள், சிறந்த செயல்திறன் கொண்டவர்களுக்கு மட்டுமே ஒதுக்கப்பட்ட சிறப்பு வெகுமதிகளுடன் அங்கீகரிக்கப்படுங்கள்.",
+
+    // Testimonials
+    "testimonials.title1": "சமூகத்தின்",
+    "testimonials.title2": "நம்பிக்கை",
+    "testimonials.subtitle": "BSPrep இன் தாக்கத்தை நேரடியாக அனுபவித்த மாணவர்கள் மற்றும் வழிகாட்டிகளிடமிருந்து கேளுங்கள்.",
+    "testimonials.list": [
+      {
+        name: "Aarav Sharma",
+        role: "IITM BS Data Science Student",
+        quote: "நான் எனது அசைன்மென்ட்களை அணுகும் முறையை BSPrep முற்றிலும் மாற்றியது. கருத்துக்கள் கடினமாக இருக்கும்போது சக மாணவர்களின் வழிகாட்டுதல் மற்றும் முறையான வளங்கள் பெரிதும் உதவுகின்றன.",
+        avatar: "A"
+      },
+      {
+        name: "Priya Patel",
+        role: "BSPrep Mentor",
+        quote: "இந்த தளத்தில் ஒரு வழிகாட்டியாக இருப்பது, நான் எதிர்கொண்ட சவால்களைத் தாண்டி ஜூனியர்களை வழிநடத்த எனக்கு உதவுகிறது. இந்த சமூகத்திற்கு திருப்பித் தருவது நம்பமுடியாத அளவிற்கு திருப்தி அளிக்கிறது.",
+        avatar: "P"
+      },
+      {
+        name: "Siddharth Verma",
+        role: "IITM BS Diploma Student",
+        quote: "BSPrep வழங்கிய மாதிரி நேர்காணல்கள் மற்றும் ஆய்வுப் பொருட்கள் எனது தகுதித் தேர்வுகளில் சிறந்து விளங்க எனக்குத் தேவையான சரியான விளிம்பைக் கொடுத்தன. மிகவும் பரிந்துரைக்கிறேன்!",
+        avatar: "S"
+      },
+      {
+        name: "Kavya Iyer",
+        role: "IITM BS Degree Student",
+        quote: "ஆன்லைனில் படிக்கும்போது நான் தனிமைப்படுத்தப்பட்டதாக உணர்ந்தேன், ஆனால் BSPrep இன் சமூகம் என்னை இணைக்கப்பட்டதாக உணர வைத்தது. கூட்டு கற்றல் சூழல் இணையற்றது.",
+        avatar: "K"
+      },
+      {
+        name: "Rohan Gupta",
+        role: "IITM BS Foundation Student",
+        quote: "முறையான வழிகாட்டிகள் எனது முதல் செமஸ்டரை நம்பிக்கையுடன் கடக்க உதவியது. IITM BS பயணத்திற்கான சிறந்த துணை இது.",
+        avatar: "R"
+      }
+    ],
 
     // FAQ
     "faq.title1": "பொதுவான",

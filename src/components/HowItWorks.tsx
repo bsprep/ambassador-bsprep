@@ -15,7 +15,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="process" className="bg-[#F8FAFC] py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase relative overflow-hidden border-t border-black/5">
+    <section id="process" className="py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         <motion.div
@@ -24,12 +24,22 @@ export default function HowItWorks() {
           viewport={{ once: true, margin: "-50px" }}
         >
           <div className="flex items-center gap-4 text-[#273E57] tracking-widest text-[10px] sm:text-xs font-bold mb-6">
-            <span className="w-8 h-[2px] bg-[#273E57]" />
             {t("process.label")}
           </div>
           
-          <h2 className="text-4xl sm:text-5xl md:text-6xl tracking-tight mb-20 font-extrabold normal-case text-slate-900">
-            {t("process.title")}
+          <h2 className="text-4xl sm:text-5xl md:text-6xl tracking-tight mb-20 leading-tight">
+            {(() => {
+              const text = t("process.title") as string;
+              const words = text.split(" ");
+              const mid = Math.ceil(words.length / 2);
+              return (
+                <>
+                  <span className="text-black">{words.slice(0, mid).join(" ")}</span>
+                  {words.length > 1 && <br />}
+                  <span className="text-[#273E57]">{words.slice(mid).join(" ")}</span>
+                </>
+              );
+            })()}
           </h2>
         </motion.div>
 
@@ -56,7 +66,7 @@ export default function HowItWorks() {
                 className="relative z-10 flex flex-col items-center sm:items-start gap-6 group cursor-default"
               >
                 {/* The Number - using the background color to create a cut-out effect over the line */}
-                <div className={`text-6xl sm:text-7xl font-black tracking-tighter bg-[#F8FAFC] px-4 -ml-4 transition-colors duration-300 ${step.active ? "text-[#273E57]" : "text-slate-300 group-hover:text-[#273E57]"}`}>
+                <div className={`text-6xl sm:text-7xl font-black tracking-tighter bg-white px-4 -ml-4 transition-colors duration-300 ${step.active ? "text-[#273E57]" : "text-slate-300 group-hover:text-[#273E57]"}`}>
                   {step.num}
                 </div>
                 <div className="text-sm sm:text-base font-bold text-slate-800 normal-case max-w-[150px] sm:ml-2 text-center sm:text-left transition-colors duration-300 group-hover:text-[#273E57]">

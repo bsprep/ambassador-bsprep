@@ -50,7 +50,7 @@ export default function Timeline() {
   const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="timeline" className="bg-white text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase tracking-widest border-t border-black/5" ref={ref}>
+    <section id="timeline" className="text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase tracking-widest" ref={ref}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

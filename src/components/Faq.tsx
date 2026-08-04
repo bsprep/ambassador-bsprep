@@ -38,7 +38,7 @@ export default function Faq() {
   ];
 
   return (
-    <section id="faq" className="bg-white text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase tracking-widest border-t border-black/5">
+    <section id="faq" className="text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase tracking-widest">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

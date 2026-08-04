@@ -30,18 +30,27 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="bg-white text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 relative border-t border-black/5">
+    <section id="benefits" className="text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 relative">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 relative">
         
         {/* Left Side (Sticky header) */}
         <div className="lg:w-2/5 relative">
           <div className="lg:sticky lg:top-32 flex flex-col gap-6">
             <div className="flex items-center gap-4 text-[#273E57] uppercase tracking-widest text-[10px] sm:text-xs font-bold">
-              <span className="w-6 h-[1px] bg-[#273E57]" />
               {t("benefits.label")}
             </div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1] whitespace-pre-line">
-              {t("benefits.title")}
+            <h2 className="text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.1]">
+              {(() => {
+                const text = t("benefits.title") as string;
+                const [first, ...rest] = text.split("\n");
+                return (
+                  <>
+                    <span className="text-black">{first}</span>
+                    {rest.length > 0 && <br />}
+                    <span className="text-[#273E57]">{rest.join("\n")}</span>
+                  </>
+                );
+              })()}
             </h2>
             <p className="text-sm sm:text-base opacity-70 font-medium leading-relaxed max-w-sm text-slate-800">
               {t("benefits.desc")}

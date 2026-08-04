@@ -51,8 +51,8 @@ export default function ElitePerks() {
   ];
 
   return (
-    <section id="elite-perks" className="bg-white text-black font-semibold uppercase tracking-widest relative">
-      <div className="pt-20 sm:pt-32 pb-4 px-5 sm:px-8 md:px-12 max-w-7xl mx-auto border-t border-black/5">
+    <section id="elite-perks" className="text-black font-semibold uppercase tracking-widest relative">
+      <div className="pt-20 sm:pt-32 pb-4 px-5 sm:px-8 md:px-12 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,12 +60,21 @@ export default function ElitePerks() {
           className="mb-8 text-center flex flex-col items-center"
         >
           <div className="flex items-center gap-4 text-[#273E57] uppercase tracking-widest text-[10px] sm:text-xs font-bold mb-6">
-            <span className="hidden sm:block w-8 h-[1px] bg-[#273E57]" />
             {t("perks.label")}
-            <span className="hidden sm:block w-8 h-[1px] bg-[#273E57]" />
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl tracking-tight mb-4 font-bold normal-case">
-            {t("perks.title")}
+          <h2 className="text-4xl sm:text-5xl md:text-6xl tracking-tight mb-4 leading-tight">
+            {(() => {
+              const text = t("perks.title") as string;
+              const words = text.split(" ");
+              const mid = Math.ceil(words.length / 2);
+              return (
+                <>
+                  <span className="text-black">{words.slice(0, mid).join(" ")}</span>
+                  {words.length > 1 && <br />}
+                  <span className="text-[#273E57]">{words.slice(mid).join(" ")}</span>
+                </>
+              );
+            })()}
           </h2>
           <p className="text-sm sm:text-base opacity-60 font-medium normal-case max-w-2xl mt-4">
             {t("perks.desc")}

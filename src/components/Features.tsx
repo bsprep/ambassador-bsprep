@@ -55,7 +55,7 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="bg-white text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase relative overflow-hidden">
+    <section id="features" className="text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col gap-24">
 
         {/* Top 2-Column: Info & Poster */}

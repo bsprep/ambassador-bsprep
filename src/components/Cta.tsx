@@ -8,7 +8,7 @@ export default function Cta() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative py-24 md:py-32 px-5 sm:px-8 md:px-12 bg-white text-black overflow-hidden flex flex-col items-center justify-center text-center border-t border-black/5">
+    <section className="relative py-24 md:py-32 px-5 sm:px-8 md:px-12 text-black overflow-hidden flex flex-col items-center justify-center text-center">
       <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none">
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#273E57] rounded-full blur-[120px]" />
       </div>

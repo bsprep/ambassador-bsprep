@@ -9,7 +9,7 @@ export default function Marquee() {
   const bsprepWords = t("marquee.words") as string[];
 
   return (
-    <div className="w-full overflow-hidden bg-white py-5 border-b border-black/5 font-semibold text-xs sm:text-sm tracking-[0.2em] uppercase text-[#273E57]">
+    <div className="w-full overflow-hidden py-5 font-semibold text-xs sm:text-sm tracking-[0.2em] uppercase text-[#273E57]">
       <div className="flex whitespace-nowrap">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}

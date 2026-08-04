@@ -16,7 +16,7 @@ export default function Sponsors() {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-white text-black py-20 sm:py-24 px-5 border-t border-black/5 overflow-hidden font-semibold uppercase tracking-widest">
+    <section className="text-black py-20 sm:py-24 px-5 overflow-hidden font-semibold uppercase tracking-widest">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <h2 className="text-2xl sm:text-4xl tracking-widest mb-4">{t("sponsors.title")}</h2>
         <p className="text-[10px] sm:text-xs opacity-50 mb-16 text-center">{t("sponsors.subtitle")}</p>

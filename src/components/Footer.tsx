@@ -57,7 +57,7 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} BSPrep
             </span>
             <span className="opacity-40 normal-case font-medium text-[10px] max-w-[250px] leading-relaxed text-black">
-              Disclaimer: BSPrep is an independent, non-profit initiative and is NOT affiliated with, endorsed by, or sponsored by IIT Madras.
+              Disclaimer: BSPrep is an independent initiative, not affiliated with IIT Madras.
             </span>
           </div>
         </div>
