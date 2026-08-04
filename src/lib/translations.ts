@@ -3,14 +3,14 @@ export type Language = "en" | "hi" | "ta";
 export const TRANSLATIONS: Record<Language, Record<string, any>> = {
   en: {
     // Hero
-    "hero.stats.impacted": "STUDENTS\nIMPACTED",
+    "hero.stats.impacted": "ACTIVE\nSTUDENTS",
+    "hero.stats.mentors": "EXPERT\nMENTORS",
     "hero.stats.rewards": "PREMIUM\nREWARDS",
-    "hero.stats.ambassadors": "STUDENT\nAMBASSADORS",
-    "hero.textA": "Empowering Next-Gen \n Tech Leaders \n Across Campuses",
+    "hero.textA": "Empowering Next-Gen Tech Leaders",
     "hero.applyNow": "Apply Now",
     "hero.applicationsOpen": "Applications Open Now",
-    "hero.textB": "The Official Portal For Student Ambassadors To Unlock Exclusive Rewards And Opportunities",
-    "hero.headingWords": ["Growth", "Fellows", "Portal"],
+    "hero.textB": "Unlock Exclusive Rewards & Opportunities",
+    "hero.headingWords": ["Student", "Ambassador", "Program"],
 
     // About
     "about.pill": "ABOUT US",
@@ -154,14 +154,14 @@ export const TRANSLATIONS: Record<Language, Record<string, any>> = {
   },
   hi: {
     // Hero
-    "hero.stats.impacted": "प्रभावित\nछात्र",
+    "hero.stats.impacted": "सक्रिय\nछात्र",
+    "hero.stats.mentors": "विशेषज्ञ\nमेंटर",
     "hero.stats.rewards": "प्रीमियम\nइनाम",
-    "hero.stats.ambassadors": "छात्र\nएंबेसडर",
-    "hero.textA": "कैंपस में अगली पीढ़ी के\nटेक लीडर्स को\nसशक्त बनाना",
+    "hero.textA": "अगली पीढ़ी के टेक लीडर्स को सशक्त बनाना",
     "hero.applyNow": "अभी आवेदन करें",
     "hero.applicationsOpen": "आवेदन अब खुले हैं",
-    "hero.textB": "विशेष पुरस्कार और अवसर अनलॉक करने के लिए छात्र एंबेसडर का आधिकारिक पोर्टल",
-    "hero.headingWords": ["ग्रोथ", "फेलोज़", "पोर्टल"],
+    "hero.textB": "विशेष पुरस्कार और अवसर अनलॉक करें",
+    "hero.headingWords": ["छात्र", "एंबेसडर", "कार्यक्रम"],
 
     // About
     "about.pill": "हमारे बारे में",
@@ -305,14 +305,14 @@ export const TRANSLATIONS: Record<Language, Record<string, any>> = {
   },
   ta: {
     // Hero
-    "hero.stats.impacted": "பயனடைந்த\nமாணவர்கள்",
+    "hero.stats.impacted": "செயலில் உள்ள\nமாணவர்கள்",
+    "hero.stats.mentors": "நிபுணத்துவ\nவழிகாட்டிகள்",
     "hero.stats.rewards": "பிரீமியம்\nவெகுமதிகள்",
-    "hero.stats.ambassadors": "மாணவர்\nதூதர்கள்",
-    "hero.textA": "கல்லூரிகளில் அடுத்த\nதலைமுறை தொழில்நுட்ப\nதலைவர்களை உருவாக்குதல்",
+    "hero.textA": "அடுத்த தலைமுறை தொழில்நுட்ப தலைவர்களை உருவாக்குதல்",
     "hero.applyNow": "விண்ணப்பிக்கவும்",
     "hero.applicationsOpen": "விண்ணப்பங்கள் திறக்கப்பட்டுள்ளன",
-    "hero.textB": "பிரத்யேக வெகுமதிகள் மற்றும் வாய்ப்புகளைத் திறப்பதற்கான மாணவர் தூதர்களின் அதிகாரப்பூர்வ தளம்",
-    "hero.headingWords": ["குரோத்", "ஃபெலோஸ்", "போர்ட்டல்"],
+    "hero.textB": "பிரத்யேக வெகுமதிகள் மற்றும் வாய்ப்புகளைத் திறக்கவும்",
+    "hero.headingWords": ["மாணவர்", "தூதர்", "திட்டம்"],
 
     // About
     "about.pill": "எங்களைப் பற்றி",

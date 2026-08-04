@@ -49,9 +49,9 @@ export default function Hero() {
   const { t } = useLanguage();
 
   const STATS = [
-    { value: "10K", label: t("hero.stats.impacted") },
-    { value: "50", label: t("hero.stats.rewards") },
-    { value: "100", label: t("hero.stats.ambassadors") },
+    { value: "1200", label: t("hero.stats.impacted") },
+    { value: "15", label: t("hero.stats.mentors") },
+    { value: "20", label: t("hero.stats.rewards") },
   ];
 
   const HEADING_WORDS = t("hero.headingWords") as string[];
@@ -89,8 +89,8 @@ export default function Hero() {
                 className="flex items-start"
                 style={{ fontSize: "clamp(1.2rem, 4.5vw, 3rem)", lineHeight: 1 }}
               >
-                <span className="text-[#273E57] text-[0.5em] mt-[0.2em]">+</span>
                 <span>{stat.value}</span>
+                <span className="text-[#273E57] text-[0.5em] mt-[0.2em]">+</span>
               </div>
               <div className="text-[9px] sm:text-[10px] md:text-xs tracking-widest whitespace-pre-line leading-tight text-right mt-1">
                 {stat.label}
@@ -104,15 +104,15 @@ export default function Hero() {
       <div className="px-5 sm:px-8 md:px-12 pb-8 md:pb-12 flex flex-col gap-6 md:gap-12 relative z-10">
         {/* Row A */}
         <div className="flex flex-row items-center justify-between gap-4">
-          <motion.p
+          <motion.div
             custom={5}
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="text-[9px] sm:text-[10px] md:text-xs tracking-widest max-w-[120px] sm:max-w-[150px] md:max-w-[18rem] whitespace-pre-line leading-tight"
+            className="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-full border border-black/10 bg-white/60 backdrop-blur-md shadow-sm text-[8px] sm:text-[10px] md:text-xs tracking-widest whitespace-nowrap text-slate-800"
           >
             {t("hero.textA")}
-          </motion.p>
+          </motion.div>
 
           <div className="flex flex-col items-end gap-1.5 sm:gap-2">
             <motion.a
@@ -140,15 +140,15 @@ export default function Hero() {
 
         {/* Row B */}
         <div className="flex flex-row items-end justify-between gap-3 sm:gap-4">
-          <motion.p
+          <motion.div
             custom={7}
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="w-[110px] sm:w-[160px] md:w-[250px] shrink-0 text-[8px] sm:text-[10px] md:text-xs tracking-widest text-left md:text-right leading-tight"
+            className="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-full border border-black/10 bg-white/60 backdrop-blur-md shadow-sm text-[8px] sm:text-[10px] md:text-xs tracking-widest whitespace-nowrap text-slate-800 mb-2 sm:mb-6"
           >
             {t("hero.textB")}
-          </motion.p>
+          </motion.div>
 
           <div className="flex flex-col items-end">
             {HEADING_WORDS.map((word, i) => (
