@@ -95,73 +95,36 @@ export default function ElitePerks() {
                 paddingTop: "60px", 
               }}
             >
-              {/* Card Container */}
-              <div className="w-full max-w-7xl mx-auto px-5 sm:px-8 md:px-12 h-[80vh] min-h-[500px] flex shadow-[0_-10px_40px_rgb(0,0,0,0.05)] rounded-t-[2.5rem] overflow-hidden bg-white">
+              <div className="w-full max-w-7xl mx-auto px-5 sm:px-8 md:px-12 h-auto lg:h-[80vh] min-h-[600px] lg:min-h-[500px] flex flex-col lg:flex-row shadow-[0_-10px_40px_rgb(0,0,0,0.05)] rounded-t-[2.5rem] overflow-hidden bg-white">
                 
-                {/* Left Half */}
-                <div className={`w-full lg:w-1/2 flex flex-col justify-center p-10 sm:p-16 lg:p-24 relative ${isEven ? "bg-slate-50 order-2 lg:order-1" : "bg-white order-1"}`}>
-                  {!isEven ? (
-                    // Text Content
-                    <div className="flex flex-col gap-6 relative z-10">
-                      <div className="flex items-center gap-4 text-[#273E57] uppercase tracking-widest text-[10px] sm:text-xs font-bold">
-                        <span className="w-6 h-[1px] bg-[#273E57]" />
-                        {perk.num}, {t("perks.sponsored")} {perk.sponsor}
-                      </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 normal-case leading-[1.1]">
-                        {perk.title}
-                      </h3>
-                      <p className="text-sm sm:text-base opacity-70 font-medium leading-relaxed text-slate-800 normal-case mt-2 max-w-md">
-                        {perk.description}
-                      </p>
+                {/* Text Content (Always second on mobile, alternates on desktop) */}
+                <div className={`w-full lg:w-1/2 flex flex-col justify-center p-8 sm:p-12 lg:p-24 relative order-2 ${isEven ? "lg:order-2 bg-slate-50" : "lg:order-1 bg-white"}`}>
+                  <div className="flex flex-col gap-4 lg:gap-6 relative z-10">
+                    <div className="flex items-center gap-3 lg:gap-4 text-[#273E57] uppercase tracking-widest text-[10px] sm:text-xs font-bold">
+                      <span className="w-4 lg:w-6 h-[1px] bg-[#273E57]" />
+                      {perk.num}, {t("perks.sponsored")} {perk.sponsor}
                     </div>
-                  ) : (
-                    // Visual Content
-                    <div className="w-full h-full flex flex-col items-center justify-center relative overflow-hidden">
-                      <div className="relative w-40 h-40 sm:w-56 sm:h-56 mb-8 z-10">
-                         <Image src={perk.image} alt={perk.sponsor} fill className="object-contain drop-shadow-xl" />
-                      </div>
-                      <div className="inline-flex items-center justify-center bg-white border border-[#273E57]/20 text-[#273E57] px-6 py-2 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-sm z-10">
-                        {perk.pill}
-                      </div>
-                      {/* Big Background Number */}
-                      <div className="absolute -bottom-8 -right-4 sm:-bottom-12 sm:-right-8 text-[14rem] sm:text-[20rem] font-black text-black/[0.03] leading-none pointer-events-none select-none">
-                        {perk.num}
-                      </div>
-                    </div>
-                  )}
+                    <h3 className="text-2xl sm:text-3xl lg:text-5xl font-bold tracking-tight text-slate-900 normal-case leading-[1.1]">
+                      {perk.title}
+                    </h3>
+                    <p className="text-sm sm:text-base opacity-70 font-medium leading-relaxed text-slate-800 normal-case mt-1 lg:mt-2 max-w-md">
+                      {perk.description}
+                    </p>
+                  </div>
                 </div>
 
-                {/* Right Half */}
-                <div className={`hidden lg:flex lg:w-1/2 flex-col justify-center p-16 lg:p-24 relative ${isEven ? "bg-white order-1 lg:order-2" : "bg-slate-50 order-2"}`}>
-                  {isEven ? (
-                    // Text Content
-                    <div className="flex flex-col gap-6 relative z-10">
-                      <div className="flex items-center gap-4 text-[#273E57] uppercase tracking-widest text-[10px] sm:text-xs font-bold">
-                        <span className="w-6 h-[1px] bg-[#273E57]" />
-                        {perk.num}, {t("perks.sponsored")} {perk.sponsor}
-                      </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 normal-case leading-[1.1]">
-                        {perk.title}
-                      </h3>
-                      <p className="text-sm sm:text-base opacity-70 font-medium leading-relaxed text-slate-800 normal-case mt-2 max-w-md">
-                        {perk.description}
-                      </p>
-                    </div>
-                  ) : (
-                    // Visual Content
-                    <div className="w-full h-full flex flex-col items-center justify-center relative overflow-hidden">
-                      <div className="relative w-40 h-40 sm:w-56 sm:h-56 mb-8 z-10">
-                         <Image src={perk.image} alt={perk.sponsor} fill className="object-contain drop-shadow-xl" />
-                      </div>
-                      <div className="inline-flex items-center justify-center bg-white border border-[#273E57]/20 text-[#273E57] px-6 py-2 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-sm z-10">
-                        {perk.pill}
-                      </div>
-                      {/* Big Background Number */}
-                      <div className="absolute -bottom-8 -right-4 sm:-bottom-12 sm:-right-8 text-[14rem] sm:text-[20rem] font-black text-black/[0.03] leading-none pointer-events-none select-none">
-                        {perk.num}
-                      </div>
-                    </div>
-                  )}
+                {/* Visual Content (Always first on mobile, alternates on desktop) */}
+                <div className={`w-full lg:w-1/2 flex flex-col items-center justify-center p-12 lg:p-24 relative overflow-hidden order-1 ${isEven ? "lg:order-1 bg-white" : "lg:order-2 bg-slate-50"}`}>
+                  <div className="relative w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 mb-6 lg:mb-8 z-10">
+                     <Image src={perk.image} alt={perk.sponsor} fill className="object-contain drop-shadow-xl" />
+                  </div>
+                  <div className="inline-flex items-center justify-center bg-white border border-[#273E57]/20 text-[#273E57] px-4 py-1.5 lg:px-6 lg:py-2 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-bold uppercase tracking-widest shadow-sm z-10">
+                    {perk.pill}
+                  </div>
+                  {/* Big Background Number */}
+                  <div className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-6 lg:-bottom-12 lg:-right-8 text-[12rem] sm:text-[16rem] lg:text-[20rem] font-black text-black/[0.03] leading-none pointer-events-none select-none">
+                    {perk.num}
+                  </div>
                 </div>
 
               </div>
