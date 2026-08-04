@@ -4,6 +4,7 @@ Welcome to the BSPrep Ambassador Program portal. This platform is used for manag
 
 ## Important Links
 - [Home](https://ambassador.bsprep.in/)
+- [Ambassador Guidelines](https://ambassador.bsprep.in/guidelines)
 - [Terms and Conditions](https://ambassador.bsprep.in/terms)
 - [Privacy Policy](https://ambassador.bsprep.in/privacy)
 - [Cookie Policy](https://ambassador.bsprep.in/cookies)

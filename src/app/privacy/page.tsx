@@ -36,9 +36,19 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl uppercase tracking-widest font-semibold text-black mb-4">3. Absolute Zero Data Selling</h2>
+            <h2 className="text-xl uppercase tracking-widest font-semibold text-black mb-4">3. Third-Party Sponsor Data Sharing</h2>
+            <p className="mb-4">
+              Your privacy is our priority. <strong>We do not, and will never, sell your personal data to third parties.</strong>
+            </p>
             <p>
-              Your privacy is our priority. <strong>We do not, and will never, sell your personal data to third parties.</strong> Your data is strictly used to maintain your dashboard, track your progress, and award your earned perks. 
+              However, to provide you with exclusive zero-cost career perks, we securely share specific Participant Databases with our official sponsors strictly for the purpose of granting you those benefits. 
+            </p>
+            <p className="mt-4 p-4 bg-slate-100 border border-black/5 rounded-md text-sm">
+              <strong>Specific Sponsor Exception:</strong> To unlock your AI Mock Interview Credits and Discount Vouchers, we will share the following details with <strong>InterviewBuddy</strong>: 
+              <br/><br/>
+              <em>Candidate Name | Email | WhatsApp Number | College | Course | Graduation Year</em>
+              <br/><br/>
+              This data is provided solely to provision your InterviewBuddy account and deliver your earned rewards.
             </p>
           </section>
 

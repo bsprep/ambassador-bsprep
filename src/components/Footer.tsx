@@ -26,84 +26,86 @@ const InstagramIcon = () => (
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-5 sm:px-8 md:px-12 py-16 md:py-24 font-semibold uppercase tracking-widest text-xs sm:text-sm">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
+    <footer className="relative bg-slate-50 text-black px-5 sm:px-8 md:px-12 pt-16 pb-40 md:pt-24 md:pb-56 lg:pb-64 font-semibold uppercase tracking-widest text-xs sm:text-sm border-t border-black/5 overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
 
         {/* Brand Column */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 lg:col-span-1">
           <div className="flex items-center gap-4">
             <div className="relative w-10 h-10 shrink-0">
               <Image src="/bsprep.png" alt="BSPrep Logo" fill className="object-contain" />
             </div>
-            <span className="text-lg">BSPrep</span>
+            <span className="text-lg text-slate-900 tracking-tight font-extrabold">BSPrep</span>
           </div>
 
-          <div className="flex gap-4 mt-2">
-            <a href="https://www.linkedin.com/company/bs-prep/" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
-              <LinkedinIcon />
-            </a>
-            <a href="https://www.youtube.com/@DataScienceIITMTamil" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
-              <YoutubeIcon />
-            </a>
-            <a href="https://www.instagram.com/bsprep.in" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-white/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
-              <InstagramIcon />
-            </a>
+          <div className="flex flex-col gap-3 mt-2">
+            <div className="flex gap-4">
+              <a href="https://www.linkedin.com/company/bs-prep/" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-black/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
+                <LinkedinIcon />
+              </a>
+              <a href="https://www.youtube.com/@DataScienceIITMTamil" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-black/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
+                <YoutubeIcon />
+              </a>
+              <a href="https://www.instagram.com/bsprep.in" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-black/5 rounded-full hover:bg-[#273E57] hover:text-white transition-all">
+                <InstagramIcon />
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-4 flex flex-col gap-3">
+            <span className="opacity-50 text-[10px] font-bold tracking-widest">
+              &copy; {new Date().getFullYear()} BSPrep
+            </span>
+            <span className="opacity-40 normal-case font-medium text-[10px] max-w-[250px] leading-relaxed text-black">
+              Disclaimer: BSPrep is an independent, non-profit initiative and is NOT affiliated with, endorsed by, or sponsored by IIT Madras.
+            </span>
           </div>
         </div>
 
         {/* Portals Column */}
-        <div className="flex flex-col gap-4 opacity-70">
-          <span className="opacity-50 mb-2">Websites</span>
+        <div className="flex flex-col gap-4 text-black/70">
+          <span className="opacity-40 mb-2 text-black text-[10px]">Websites</span>
           <a href="https://bsprep.in" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Main Website</a>
           <a href="https://blog.bsprep.in" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Blogs Portal</a>
           <a href="https://pages.razorpay.com/support-bsprep" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors mt-2 text-[#273E57] font-bold">Donate / Support</a>
         </div>
 
         {/* Forms & Contact Column */}
-        <div className="flex flex-col gap-4 opacity-70">
-          <span className="opacity-50 mb-2">Contact & Forms</span>
+        <div className="flex flex-col gap-4 text-black/70">
+          <span className="opacity-40 mb-2 text-black text-[10px]">Contact & Forms</span>
           <a href="mailto:support@bsprep.in" className="hover:text-[#273E57] transition-colors lowercase font-medium">support@bsprep.in</a>
           <a href="mailto:careers@bsprep.in" className="hover:text-[#273E57] transition-colors lowercase font-medium">careers@bsprep.in</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8lSGsbLay_yvhHWjL2rtCd0YJCgjXmxNZ3ttB4IcFB0Js8g/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors mt-2">Contact Form</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqAmEuz6NrH6P-sa7jD9-0272a-cwm9eASrbvHor7nJN_TtQ/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Feedback Form</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyhCw9tPgKmMWYPhjV6Kzixp2RdYEi-x7JPL6JUxoLwbnB_g/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Join Community</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvet6P3yTtm4Ui3VE7M0gDSAsltxZ-Rrtd4fgUY0_iL7lkNg/viewform?usp=dialog" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Hiring Form</a>
+          <a href="https://bsprep.in/careers" target="_blank" rel="noreferrer" className="hover:text-[#273E57] transition-colors">Careers</a>
         </div>
 
         {/* Legal Column */}
-        <div className="flex flex-col gap-4 opacity-70">
-          <span className="opacity-50 mb-2">Legal</span>
+        <div className="flex flex-col gap-4 text-black/70">
+          <span className="opacity-40 mb-2 text-black text-[10px]">Legal</span>
+          <Link href="/guidelines" className="hover:text-[#273E57] transition-colors">Ambassador Guidelines</Link>
           <Link href="/terms" className="hover:text-[#273E57] transition-colors">Terms of Service</Link>
           <Link href="/privacy" className="hover:text-[#273E57] transition-colors">Privacy Policy</Link>
           <Link href="/cookies" className="hover:text-[#273E57] transition-colors">Cookie Policy</Link>
         </div>
 
         {/* QR Codes Column */}
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
-            <span className="opacity-50 text-xs">Donate & Support</span>
-            <div className="bg-white p-2 rounded-lg w-fit">
-              <Image src="/razorpay-qr.png" alt="Razorpay QR" width={80} height={80} className="rounded-md" />
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="opacity-50 text-xs">Apply on Unstop</span>
-            <div className="bg-white p-2 rounded-lg w-fit">
-              <Image src="/unstop-qr.png" alt="Unstop QR" width={80} height={80} className="rounded-md" />
+        <div className="flex flex-col gap-6 items-start lg:items-end">
+          <div className="flex flex-col gap-3">
+            <span className="opacity-40 text-black text-[10px]">Apply on Unstop</span>
+            <div className="bg-white p-3 rounded-xl border border-black/5 w-[140px] h-[140px] flex items-center justify-center relative shadow-sm hover:shadow-md transition-shadow">
+              <div className="relative w-full h-full">
+                <Image src="/unstop-qr.png" alt="Unstop QR" fill className="rounded-sm object-cover" />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-        <div className="flex flex-col gap-1">
-          <span className="opacity-50">
-            &copy; {new Date().getFullYear()} BSPrep
-          </span>
-          <span className="opacity-40 normal-case font-medium text-[10px] max-w-lg">
-            Disclaimer: BSPrep is an independent, non-profit initiative and is NOT affiliated with, endorsed by, or sponsored by IIT Madras.
-          </span>
-        </div>
+      {/* Giant Watermark Text */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[20%] text-[22vw] font-black text-black/[0.03] leading-none pointer-events-none select-none w-full text-center whitespace-nowrap z-0">
+        BSPREP
       </div>
     </footer>
   );

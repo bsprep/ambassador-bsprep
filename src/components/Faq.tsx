@@ -3,32 +3,39 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
-
-const FAQS = [
-  {
-    question: "What is the Growth Fellow program?",
-    answer: "An exclusive, invite-only ambassador program where driven students earn premium rewards by promoting BSPrep and building their campus community.",
-  },
-  {
-    question: "Who is eligible to apply?",
-    answer: "Any student with a passion for technology, networking, and community building. No prior technical experience is required—just eagerness and drive.",
-  },
-  {
-    question: "How are candidates shortlisted?",
-    answer: "Shortlisting is based strictly on your application. We look for enthusiasm, clear communication, and a genuine desire to grow your skills.",
-  },
-  {
-    question: "What is the time commitment?",
-    answer: "The program is entirely flexible. You complete tasks (bounties) and refer peers at your own pace alongside your studies.",
-  },
-  {
-    question: "How do the rewards work?",
-    answer: "You earn points for every successful referral and verified bounty task. These points unlock our elite perks, from .xyz domains to physical swag and AI career tools.",
-  },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const { t } = useLanguage();
+
+  const FAQS = [
+    {
+      question: t("faq.q1"),
+      answer: (
+        <>
+          {t("faq.q1").includes("Where") ? "You can apply directly through our official Unstop listing. " : ""}
+          <a href="https://unstop.com/p/student-ambassador-program-bsprep-1720364?lb=usePftiW&utm_medium=Share&utm_source=competitions&utm_campaign=Sozyuihw88836" target="_blank" rel="noreferrer" className="text-[#273E57] font-bold hover:underline">Click here to apply on Unstop</a>.
+        </>
+      ),
+    },
+    {
+      question: t("faq.q2"),
+      answer: t("faq.a2"),
+    },
+    {
+      question: t("faq.q3"),
+      answer: t("faq.a3"),
+    },
+    {
+      question: t("faq.q4"),
+      answer: t("faq.a4"),
+    },
+    {
+      question: t("faq.q5"),
+      answer: t("faq.a5"),
+    },
+  ];
 
   return (
     <section id="faq" className="bg-white text-black py-20 sm:py-32 px-5 sm:px-8 md:px-12 font-semibold uppercase tracking-widest border-t border-black/5">
@@ -40,9 +47,9 @@ export default function Faq() {
           className="mb-16 text-center"
         >
           <h2 className="text-3xl sm:text-5xl md:text-6xl tracking-tight mb-4">
-            <span className="text-black">COMMON</span> <span className="text-[#273E57]">QUESTIONS</span>
+            <span className="text-black">{t("faq.title1")}</span> <span className="text-[#273E57]">{t("faq.title2")}</span>
           </h2>
-          <p className="text-xs sm:text-sm opacity-50">Everything you need to know</p>
+          <p className="text-xs sm:text-sm opacity-50">{t("faq.subtitle")}</p>
         </motion.div>
 
         <div className="flex flex-col gap-4">

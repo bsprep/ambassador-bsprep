@@ -4,6 +4,12 @@ import { ArrowLeft, ArrowUpRight, Mail } from "lucide-react";
 
 const SPONSORS_DATA = [
   {
+    name: "InterviewBuddy",
+    src: "/sponsors/interview_buddy.svg",
+    website: "https://interviewbuddy.net",
+    description: "A comprehensive platform that provides students with AI mock interview credits. They empower our community by providing high-value vouchers for winners, discount coupons for participants, and a simulated environment to level up their interview game.",
+  },
+  {
     name: "StickerFever",
     src: "/sponsors/stickerfever.png",
     website: "https://stickerfever.in",

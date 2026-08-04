@@ -2,14 +2,17 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
-import { ArrowUpRight, X } from "lucide-react";
+import { ArrowUpRight, X, Globe } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
+import { Language } from "@/lib/translations";
 
 const NAV_LINKS = [
   { label: "Timeline", href: "/#timeline" },
-  { label: "Perks", href: "/#benefits" },
+  { label: "Perks", href: "/#elite-perks" },
+  { label: "Leaderboard", href: "/#benefits" },
   { label: "Responsibilities", href: "/#features" },
   { label: "FAQ", href: "/#faq" },
 ];
@@ -19,6 +22,9 @@ export default function Navbar() {
   const [isTop, setIsTop] = useState(true);
   const { scrollY } = useScroll();
   const pathname = usePathname();
+  const { language, setLanguage } = useLanguage();
+
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsTop(latest < 50);
@@ -62,14 +68,44 @@ export default function Navbar() {
           ))}
         </div>
 
-        <button
-          onClick={() => setIsMobileMenuOpen(true)}
-          className="w-9 h-9 rounded-full bg-black flex flex-col items-center justify-center gap-1 shrink-0 group hover:bg-[#273E57] transition-colors"
-        >
-          <span className="w-4 h-[2px] bg-white group-hover:scale-x-90 transition-transform origin-center" />
-          <span className="w-4 h-[2px] bg-white group-hover:scale-x-110 transition-transform origin-center" />
-          <span className="w-4 h-[2px] bg-white group-hover:scale-x-90 transition-transform origin-center" />
-        </button>
+        <div className="flex items-center gap-4 sm:gap-6">
+          <div 
+            className="relative py-2 cursor-pointer"
+            onMouseEnter={() => setIsLangMenuOpen(true)}
+            onMouseLeave={() => setIsLangMenuOpen(false)}
+            onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+          >
+            <div className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-black/60 hover:text-[#273E57] transition-colors">
+              <Globe size={16} />
+              <span>{language.toUpperCase()}</span>
+            </div>
+            
+            <AnimatePresence>
+              {isLangMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute right-0 top-full mt-1 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-xl border border-black/5 flex flex-col min-w-[120px] overflow-hidden py-1 z-50 origin-top-right"
+                >
+                  <button onClick={() => { setLanguage("en"); setIsLangMenuOpen(false); }} className={`px-4 py-3 text-left text-xs tracking-widest hover:bg-slate-50 transition-colors ${language === "en" ? "text-[#273E57] font-bold" : "text-black/60 font-medium"}`}>ENGLISH</button>
+                  <button onClick={() => { setLanguage("hi"); setIsLangMenuOpen(false); }} className={`px-4 py-3 text-left text-xs tracking-widest hover:bg-slate-50 transition-colors ${language === "hi" ? "text-[#273E57] font-bold" : "text-black/60 font-medium"}`}>HINDI</button>
+                  <button onClick={() => { setLanguage("ta"); setIsLangMenuOpen(false); }} className={`px-4 py-3 text-left text-xs tracking-widest hover:bg-slate-50 transition-colors ${language === "ta" ? "text-[#273E57] font-bold" : "text-black/60 font-medium"}`}>TAMIL</button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          <button
+            onClick={() => setIsMobileMenuOpen(true)}
+            className="w-9 h-9 rounded-full bg-black flex flex-col items-center justify-center gap-1 shrink-0 group hover:bg-[#273E57] transition-colors"
+          >
+            <span className="w-4 h-[2px] bg-white group-hover:scale-x-90 transition-transform origin-center" />
+            <span className="w-4 h-[2px] bg-white group-hover:scale-x-110 transition-transform origin-center" />
+            <span className="w-4 h-[2px] bg-white group-hover:scale-x-90 transition-transform origin-center" />
+          </button>
+        </div>
       </motion.nav>
 
       {/* Mobile Menu Overlay */}

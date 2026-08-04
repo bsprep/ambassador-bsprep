@@ -3,14 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-
-const STATS = [
-  { value: "10K", label: "STUDENTS\nIMPACTED" },
-  { value: "50", label: "PREMIUM\nREWARDS" },
-  { value: "100", label: "STUDENT\nAMBASSADORS" },
-];
-
-const HEADING_WORDS = ["Growth", "Fellows", "Portal"];
+import { useLanguage } from "@/context/LanguageContext";
 
 const customEase = [0.22, 1, 0.36, 1] as const;
 
@@ -53,6 +46,16 @@ const slideUp = {
 };
 
 export default function Hero() {
+  const { t } = useLanguage();
+
+  const STATS = [
+    { value: "10K", label: t("hero.stats.impacted") },
+    { value: "50", label: t("hero.stats.rewards") },
+    { value: "100", label: t("hero.stats.ambassadors") },
+  ];
+
+  const HEADING_WORDS = t("hero.headingWords") as string[];
+
   return (
     <div className="relative min-h-screen flex flex-col font-semibold uppercase text-black selection:bg-[#273E57] selection:text-white overflow-hidden">
       
@@ -108,9 +111,9 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="text-[9px] sm:text-[10px] md:text-xs tracking-widest max-w-[120px] sm:max-w-[150px] md:max-w-[18rem]"
+            className="text-[9px] sm:text-[10px] md:text-xs tracking-widest max-w-[120px] sm:max-w-[150px] md:max-w-[18rem] whitespace-pre-line leading-tight"
           >
-            Empowering Next-Gen <br /> Tech Leaders <br /> Across Campuses
+            {t("hero.textA")}
           </motion.p>
 
           <div className="flex flex-col items-end gap-1.5 sm:gap-2">
@@ -122,7 +125,7 @@ export default function Hero() {
               variants={fadeUp}
               className="flex items-center gap-2 text-xs sm:text-sm md:text-base text-white bg-[#273E57] px-4 py-2 sm:px-6 sm:py-3 rounded-full whitespace-nowrap group hover:bg-[#1A2D42] transition-colors"
             >
-              Apply Now
+              {t("hero.applyNow")}
               <ArrowUpRight className="w-[14px] h-[14px] sm:w-[18px] sm:h-[18px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </motion.a>
             <motion.div
@@ -132,7 +135,7 @@ export default function Hero() {
               variants={fadeUp}
               className="text-[8px] sm:text-[9px] md:text-[10px] tracking-widest opacity-50 uppercase mr-2"
             >
-              Applications Open Now
+              {t("hero.applicationsOpen")}
             </motion.div>
           </div>
         </div>
@@ -144,9 +147,9 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="w-[110px] sm:w-[160px] md:w-[250px] shrink-0 text-[8px] sm:text-[10px] md:text-xs tracking-widest text-left md:text-right"
+            className="w-[110px] sm:w-[160px] md:w-[250px] shrink-0 text-[8px] sm:text-[10px] md:text-xs tracking-widest text-left md:text-right leading-tight"
           >
-            The Official Portal For Student Ambassadors To Unlock Exclusive Rewards And Opportunities
+            {t("hero.textB")}
           </motion.p>
 
           <div className="flex flex-col items-end">
@@ -170,8 +173,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
