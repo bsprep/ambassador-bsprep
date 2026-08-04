@@ -118,16 +118,27 @@ export default function Features() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 pt-12 border-t border-black/5"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-6 lg:gap-10 pt-12"
         >
           {FEATURES.map((feature, i) => (
-            <motion.div key={i} variants={itemVariants} className="flex flex-col gap-6 group">
-              <div className="p-4 bg-black/5 w-fit group-hover:bg-[#273E57]/10 transition-colors rounded-xl">
-                {feature.icon}
+            <motion.div 
+              key={i} 
+              variants={itemVariants} 
+              className="flex flex-col items-center text-center p-8 sm:p-10 lg:p-12 relative"
+            >
+              {/* Icon Container - A perfect circle sitting at the top */}
+              <div className="p-6 lg:p-8 bg-slate-50 rounded-full mt-4 lg:mt-6 shadow-sm ring-1 ring-black/5">
+                <div className="text-[#273E57]">
+                  {feature.icon}
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl mb-4 tracking-wider">{feature.title}</h3>
-                <p className="text-xs sm:text-sm tracking-widest opacity-70 leading-relaxed normal-case font-medium">
+              
+              {/* Text Content */}
+              <div className="mt-8 mb-4 flex flex-col flex-grow relative z-10">
+                <h3 className="text-xl sm:text-2xl mb-4 tracking-wider text-slate-900 font-bold uppercase">
+                  {feature.title}
+                </h3>
+                <p className="text-xs sm:text-sm tracking-widest opacity-70 leading-relaxed normal-case font-medium text-slate-600 px-2 lg:px-4">
                   {feature.description}
                 </p>
               </div>
