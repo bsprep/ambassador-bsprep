@@ -8,8 +8,8 @@ const SPONSORS = [
   { name: "INTERVIEWBUDDY", src: "/sponsors/interview_buddy.svg" },
   { name: "XYZ DOMAIN", src: "/sponsors/xyz.png" },
   { name: "UNSTOP", src: "/sponsors/unstop.png" },
-  { name: "STICKERFEVER", src: "/sponsors/stickerfever.png" },
   { name: "TRUSCHOLAR", src: "/sponsors/truscholar.png" },
+  { name: "OSEN", src: "/sponsors/OSEN.png", className: "scale-[2]" },
 ];
 
 export default function Sponsors() {
@@ -35,7 +35,7 @@ export default function Sponsors() {
                 src={sponsor.src} 
                 alt={sponsor.name}
                 fill
-                className="object-contain"
+                className={`object-contain ${sponsor.className || ""}`}
               />
             </motion.div>
           ))}

@@ -85,9 +85,9 @@ export const TRANSLATIONS: Record<Language, Record<string, any>> = {
     "perks.item4.title": "Exclusive Swag Kit",
     "perks.item4.desc": "Unlock premium Unstop goodies including official t-shirts, exclusive stickers, bookmarks, and premium notes.",
     "perks.item4.pill": "Premium Swag",
-    "perks.item5.title": "Developer Sticker Packs",
-    "perks.item5.desc": "Exclusive premium developer sticker packs specifically curated for our top tech ambassadors.",
-    "perks.item5.pill": "Tech Lifestyle",
+    "perks.item5.title": "Exclusive Event Swag",
+    "perks.item5.desc": "Top 5 winners of our LinkedIn post activity get exclusive goodies from OSEN. Top 3 receive T-Shirts, and the rest receive books.",
+    "perks.item5.pill": "Event Swag",
 
     // Benefits
     "benefits.label": "SCORING & REWARDS",
@@ -236,9 +236,9 @@ export const TRANSLATIONS: Record<Language, Record<string, any>> = {
     "perks.item4.title": "विशेष स्वैग किट",
     "perks.item4.desc": "आधिकारिक टी-शर्ट, विशेष स्टिकर, बुकमार्क और प्रीमियम नोट्स सहित प्रीमियम Unstop उपहार अनलॉक करें।",
     "perks.item4.pill": "प्रीमियम स्वैग",
-    "perks.item5.title": "डेवलपर स्टिकर पैक",
-    "perks.item5.desc": "हमारे शीर्ष टेक एंबेसडर्स के लिए विशेष रूप से तैयार किए गए प्रीमियम डेवलपर स्टिकर पैक।",
-    "perks.item5.pill": "टेक जीवनशैली",
+    "perks.item5.title": "विशेष इवेंट स्वैग",
+    "perks.item5.desc": "हमारी लिंक्डइन पोस्ट गतिविधि के शीर्ष 5 विजेताओं को OSEN से विशेष उपहार मिलते हैं। शीर्ष 3 को टी-शर्ट और बाकी को किताबें मिलती हैं।",
+    "perks.item5.pill": "इवेंट स्वैग",
 
     // Benefits
     "benefits.label": "स्कोरिंग और इनाम",
@@ -387,9 +387,9 @@ export const TRANSLATIONS: Record<Language, Record<string, any>> = {
     "perks.item4.title": "பிரத்யேக ஸ்வாக் கிட்",
     "perks.item4.desc": "டி-ஷர்ட்கள், பிரத்யேக ஸ்டிக்கர்கள் மற்றும் பிரீமியம் குறிப்புகள் உள்ளிட்ட Unstop பரிசுகளைத் திறக்கவும்.",
     "perks.item4.pill": "பிரீமியம் ஸ்வாக்",
-    "perks.item5.title": "டெவலப்பர் ஸ்டிக்கர் பேக்குகள்",
-    "perks.item5.desc": "எங்கள் சிறந்த தொழில்நுட்ப தூதர்களுக்காக பிரத்யேகமாக உருவாக்கப்பட்ட பிரீமியம் டெவலப்பர் ஸ்டிக்கர்கள்.",
-    "perks.item5.pill": "தொழில்நுட்ப வாழ்க்கை முறை",
+    "perks.item5.title": "பிரத்யேக நிகழ்வு ஸ்வாக்",
+    "perks.item5.desc": "எங்கள் லிங்க்ட்இன் இடுகை செயல்பாட்டின் சிறந்த 5 வெற்றியாளர்களுக்கு OSEN இலிருந்து பிரத்யேக பரிசுகள் கிடைக்கும். முதல் 3 பேருக்கு டி-ஷர்ட்கள் மற்றும் மீதமுள்ளவர்களுக்கு புத்தகங்கள் கிடைக்கும்.",
+    "perks.item5.pill": "நிகழ்வு ஸ்வாக்",
 
     // Benefits
     "benefits.label": "மதிப்பெண் மற்றும் வெகுமதிகள்",

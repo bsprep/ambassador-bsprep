@@ -9,12 +9,7 @@ const SPONSORS_DATA = [
     website: "https://interviewbuddy.net",
     description: "A comprehensive platform that provides students with AI mock interview credits. They empower our community by providing high-value vouchers for winners, discount coupons for participants, and a simulated environment to level up their interview game.",
   },
-  {
-    name: "StickerFever",
-    src: "/sponsors/stickerfever.png",
-    website: "https://stickerfever.in",
-    description: "An Indian brand specializing in premium, stylish, and waterproof vinyl stickers. They provide high-quality, durable stickers for laptops and accessories to help our students personalize their gear and express their unique tech persona.",
-  },
+
   {
     name: "TruScholar",
     src: "/sponsors/truscholar.png",
@@ -32,6 +27,13 @@ const SPONSORS_DATA = [
     src: "/sponsors/xyz.png",
     website: "https://gen.xyz",
     description: "The universally recognized .xyz domain provider. They sponsor our top performers with free 1-year custom domains to help students build their personal portfolios and kickstart their professional digital presence on the web.",
+  },
+  {
+    name: "OSEN",
+    src: "/sponsors/OSEN.png",
+    website: "https://osen.live",
+    description: "OSEN is partnering with BSPrep to host an exclusive online event session. They are sponsoring exclusive OSEN swags, including T-Shirts and books, for the top performers of our community engagement activities.",
+    imageClass: "scale-150 sm:scale-150 origin-left md:origin-center",
   },
 ];
 
@@ -58,7 +60,7 @@ export default function SponsorsPage() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#273E57]/5 rounded-bl-[4rem] -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500 pointer-events-none" />
               
               <div className="relative w-48 h-24 shrink-0 grayscale group-hover:grayscale-0 transition-all duration-300 relative z-10">
-                <Image src={sponsor.src} alt={sponsor.name} fill className="object-contain object-left md:object-center" />
+                <Image src={sponsor.src} alt={sponsor.name} fill className={`object-contain object-left md:object-center ${sponsor.imageClass || ""}`} />
               </div>
               <div className="flex-1 flex flex-col gap-4 relative z-10">
                 <h2 className="text-2xl tracking-widest text-[#273E57]">{sponsor.name}</h2>

@@ -42,11 +42,12 @@ export default function ElitePerks() {
     },
     {
       num: "05",
-      sponsor: "Sticker Fever",
+      sponsor: "OSEN",
       title: t("perks.item5.title"),
-      image: "/sponsors/stickerfever.png",
+      image: "/sponsors/OSEN.png",
       description: t("perks.item5.desc"),
-      pill: t("perks.item5.pill")
+      pill: t("perks.item5.pill"),
+      imageClass: "scale-150 sm:scale-150",
     }
   ];
 
@@ -116,7 +117,7 @@ export default function ElitePerks() {
                 {/* Visual Content (Always first on mobile, alternates on desktop) */}
                 <div className={`w-full lg:w-1/2 flex flex-col items-center justify-center p-12 lg:p-24 relative overflow-hidden order-1 ${isEven ? "lg:order-1 bg-white" : "lg:order-2 bg-slate-50"}`}>
                   <div className="relative w-32 h-32 sm:w-48 sm:h-48 lg:w-56 lg:h-56 mb-6 lg:mb-8 z-10">
-                     <Image src={perk.image} alt={perk.sponsor} fill className="object-contain drop-shadow-xl" />
+                     <Image src={perk.image} alt={perk.sponsor} fill className={`object-contain drop-shadow-xl ${perk.imageClass || ""}`} />
                   </div>
                   <div className="inline-flex items-center justify-center bg-white border border-[#273E57]/20 text-[#273E57] px-4 py-1.5 lg:px-6 lg:py-2 rounded-full text-[9px] sm:text-[10px] lg:text-xs font-bold uppercase tracking-widest shadow-sm z-10">
                     {perk.pill}

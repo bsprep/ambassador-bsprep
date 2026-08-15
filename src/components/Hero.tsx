@@ -45,10 +45,10 @@ export default function Hero() {
   const HEADING_WORDS = t("hero.headingWords") as string[];
 
   return (
-    <div className="relative z-0 min-h-[100dvh] w-full flex flex-col font-semibold uppercase text-black selection:bg-[#273E57] selection:text-white overflow-x-hidden">
+    <div className="relative z-0 min-h-[100dvh] w-full flex flex-col font-semibold uppercase text-black selection:bg-[#273E57] selection:text-white">
       
       {/* Background Video */}
-      <div className="absolute inset-0 z-[-1] pointer-events-none">
+      <div className="absolute inset-0 z-[-1] pointer-events-none overflow-hidden">
         <video
           autoPlay
           loop
