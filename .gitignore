@@ -48,4 +48,3 @@ next-env.d.ts
 *.fdb_latexmk
 *.synctex.gz
 /pdf
-config.bat
